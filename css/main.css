@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -25,6 +26,19 @@ a:hover {
 h2 {
   font-size: 2.083333vw;
   font-weight: bold;
+}
+section {
+  width: 100vw;
+  /* 1060px == 66.25em */
+  height: 66.25em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html {
+  /* 1920px 기준 16.0000128px */
+  font-size: 0.833334vw;
 }
 #main_video {
   outline: none;
@@ -171,5 +185,21 @@ main .wrap .grid div {
   margin-top: 58px;
 }
 #scene_sketch .text_sketch p {
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.video_wrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.video_wrap iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.row > * {
+  padding: 0 12px;
 }
