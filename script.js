@@ -2,7 +2,8 @@ let $slides = document.querySelector("#slides"),
   $$slide = document.querySelectorAll("#slides div"),
   $prevBtn = document.querySelector(".prev"),
   $nextBtn = document.querySelector(".next"),
-  $inner = document.querySelector("#inner_img"),
+  $inner_img = document.querySelector("#inner_img"),
+  $outer_img = document.querySelector("#outer_img"),
   currentIdx = 0,
   slideCount = $$slide.length,
   timer = undefined,
@@ -82,12 +83,12 @@ function updateCurrentSlideImage() {
   // currentIdx가 13개일 때 prevBtn을 빠르게 누르면 -13 이하까지 내려가는데 -14부터 에러가 발생하므로 이를 방지하기 위해서 27을 더해주어야 한다.
   if (currentIdx < 0) {
     let $currentImg = document.querySelector(`#slides div:nth-child(${currentIdx + 27}) img`);
-    $inner.src = `./images/main_images/carousel_second/${$currentImg.alt}.jpg`;
+    $outer_img.src = `./images/main_images/carousel_second/${$currentImg.alt}.jpg`;
   }
   // currentIdx가 5개일 때 currentIdx는 1부터 시작하므로 우리가 바꿔야하는 이미지는 2번째 이미지 이므로 1을 더해준다.
   else {
     let $currentImg = document.querySelector(`#slides div:nth-child(${currentIdx + 1}) img`);
-    $inner.src = `./images/main_images/carousel_second/${$currentImg.alt}.jpg`;
+    $outer_img.src = `./images/main_images/carousel_second/${$currentImg.alt}.jpg`;
   }
 }
 
@@ -142,7 +143,7 @@ window.addEventListener('resize', function () {
 
 // 이미지 클릭했을 때 변하게 하기 위해서
 function buttonClickHandler() {
-  $inner.src = `./images/main_images/carousel_second/${this.alt}.jpg`;
+  $outer_img.src = `./images/main_images/carousel_second/${this.alt}.jpg`;
 }
 
 let $$buttons = document.querySelectorAll("#slides div img")
