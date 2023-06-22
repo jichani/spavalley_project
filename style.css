@@ -19,7 +19,23 @@
 }
 
 html {
-  font-size: 0.83333vw;
+  /* 1920px 기준 16.0000128px */
+  font-size: 0.833334vw;
+}
+
+section {
+  width: 100vw;
+  /* 1060px == 66.25em */
+  height: 66.25em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* 초기화 */
@@ -33,19 +49,12 @@ li {
   list-style: none;
 }
 
-/*  */
-
-.wrap {
-  width: 70%;
-  margin: 0 auto;
-}
+/* 컨테이너 텍스트 부분 */
 
 .container_section {
   display: flex;
   justify-content: flex-end;
 }
-
-/* 1920 기준 1vw = 19.2px */
 
 .container_text {
   width: 35%;
