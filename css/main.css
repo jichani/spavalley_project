@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   margin-bottom: 0 !important;
   box-sizing: border-box;
+  font-family: "Pretendard-Regular";
 }
 li {
   display: inline-block;
@@ -14,6 +21,17 @@ a {
 }
 a:hover {
   color: black;
+}
+h2 {
+  font-size: 2.083333vw;
+  font-weight: bold;
+}
+#main_video {
+  outline: none;
+  border: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 /*해더부분*/
 header #gnb {
@@ -89,10 +107,9 @@ main .wrap .event_text {
   justify-content: space-between;
   padding: 30px 0;
 }
-main .wrap .event_text h2 {
-  font-size: 2.083333;
-}
+
 main .wrap .event_text p {
+  font-size: 24px;
   text-decoration: underline;
 }
 /* EVENT 그리드 */
@@ -145,4 +162,14 @@ main .wrap .grid div {
 
 .ut_wrap div {
   width: 50%;
+}
+
+/* 현장스케치 유투브 */
+/* 현장스케치 텍스트 */
+#scene_sketch .text_sketch {
+  text-align: center;
+  margin-top: 58px;
+}
+#scene_sketch .text_sketch p {
+  font-size: 18px;
 }
