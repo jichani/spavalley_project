@@ -289,12 +289,6 @@ li {
     font-size: 2.7907rem;
   }
 
-  .slides div p.main_text {
-    margin-top: 0.5rem !important;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
   #inner_carousel .controls {
     /* 안보이지만 공간은 차지하게 하기 위해서 */
     visibility: hidden;
@@ -307,6 +301,12 @@ li {
     display: block;
 
     margin-bottom: 4.6512rem;
+  }
+
+  .slides div p.main_text {
+    margin-top: 1rem !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
   }
 
   .container_text p:nth-child(3) {
