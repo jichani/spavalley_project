@@ -139,7 +139,7 @@ li {
 
   position: relative;
   bottom: 3.5vw;
-  left: 34.1vw;
+  left: 33.8vw;
 
   border-radius: 5%;
 }
@@ -198,7 +198,7 @@ li {
 }
 
 .slides div p:nth-child(3) {
-  margin-top: 2.0rem;
+  margin-top: 2.5rem;
 }
 
 .slides div p.main_text {
@@ -216,7 +216,7 @@ li {
 .slides div .sub_text {
   font-weight: 500;
   font-size: 1.125rem;
-  margin-top: 1.0rem;
+  margin-top: 1.2rem;
 }
 
 
@@ -299,18 +299,31 @@ li {
     font-size: 8.3721rem;
     text-align: left;
     display: block;
+    line-height: 1.2;
 
     margin-bottom: 4.6512rem;
   }
 
   .slides div p.main_text {
     margin-top: 1rem !important;
-    font-size: 2.5rem !important;
+    font-size: 2.65rem !important;
     font-weight: bold !important;
+  }
+
+  .slides div p.sub_text {
+    font-size: 2.3256rem !important;
+  }
+
+  .slides div.container_text p.main_text:nth-child(2) {
+    margin-top: 2rem;
   }
 
   .container_text p:nth-child(3) {
     margin-bottom: 4.6512rem;
+  }
+
+  .img_mb {
+    margin-bottom: 1rem;
   }
 
   #inner_carousel .container_text,
@@ -339,8 +352,17 @@ li {
     flex-direction: column-reverse;
   }
 
-  #outer_carousel .controls {
-    /* 안보이지만 공간은 차지하게 하기 위해서 */
-    visibility: hidden;
+  .controls i:nth-child(1),
+  .controls i:nth-child(2) {
+    font-size: 5vw;
+    padding: 2vw 3vw;
+
+    bottom: 12.5vw;
+    left: 0.5vw;
+  }
+
+  .controls i:nth-child(1) {
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 0;
   }
 }
