@@ -6,25 +6,45 @@ let $slides = document.querySelector("#outer_slides"),
   $outer_img = document.querySelector("#outer_img"),
   currentIdx = 0,
   slideCount = $$slide.length,
-  timer = undefined,
-
-  slideWidth = 12.4166,
-  slideMargin = 1.5625,
-
-  currentWidth = window.innerWidth;
+  timer = undefined;
 
 // 반응형 구현 위해서
-addEventListener("resize", () => {
+
+let currentWidth = window.innerWidth;
+// console.log(currentWidth);
+
+if (currentWidth < 1010) {
+  slideWidth = 16;
+  slideMargin = 1.8;
+  setInitialPosition();
+}
+
+else if (currentWidth > 1010) {
+  slideWidth = 12.4166;
+  slideMargin = 1.5625;
+  setInitialPosition();
+}
+
+
+function handleResize() {
   currentWidth = window.innerWidth;
-  console.log(currentWidth);
 
   if (currentWidth < 1010) {
     slideWidth = 16;
     slideMargin = 1.8;
-
+    updateWidth();
     setInitialPosition();
+    updateCurrentSlideImage();
+  } else if (currentWidth > 1010) {
+    slideWidth = 12.4166;
+    slideMargin = 1.5625;
+    updateWidth();
+    setInitialPosition();
+    updateCurrentSlideImage();
   }
-});
+}
+
+addEventListener("resize", handleResize);
 
 
 function makeClone() {
@@ -61,8 +81,15 @@ function updateWidth() {
 }
 
 function setInitialPosition() {
+  if (currentWidth < 1010) {
+    slideWidth = 16;
+    slideMargin = 1.8;
+  } else if (currentWidth > 1010) {
+    slideWidth = 12.4166;
+    slideMargin = 1.5625;
+  }
+
   let initialTranslateValue = -(slideWidth + slideMargin) * slideCount;
-  // slides { transform:translateX(-1000px);}
   $slides.style.transform = `translateX(${initialTranslateValue}vw)`;
 }
 
