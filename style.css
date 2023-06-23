@@ -219,7 +219,7 @@ li {
   transform: scale(1.1);
 } */
 
-/* @media only screen and (max-width: 430px) {
+@media only screen and (max-width: 430px) {
   section {
     height: 100vw;
   }
@@ -258,4 +258,4 @@ li {
   #outer_carousel .container_section {
     flex-direction: column;
   }
-} */
+}
