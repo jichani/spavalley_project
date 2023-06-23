@@ -21,6 +21,8 @@ addEventListener("resize", () => {
   if (currentWidth < 1010) {
     slideWidth = 16;
     slideMargin = 1.8;
+
+    setInitialPosition();
   }
 });
 
