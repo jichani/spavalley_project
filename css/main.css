@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -28,10 +27,8 @@ h2 {
   font-weight: bold;
 }
 section {
-  width: 100vw;
+  /* width: 100vw; */
   /* 1060px == 66.25em */
-  height: 66.25em;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,6 +197,9 @@ main .wrap .grid div {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.ytp-cued-thumbnail-overlay > .ytp-large-play-button {
+  width: 3rem !important;
 }
 
 .row > * {
