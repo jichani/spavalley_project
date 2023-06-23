@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -33,6 +34,10 @@ section {
   justify-content: center;
   align-items: center;
 }
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+}
 html {
   /* 1920px 기준 16.0000128px */
   font-size: 0.833334vw;
@@ -56,12 +61,30 @@ header #gnb h4 {
   font-size: 0.9rem;
   line-height: 1.35rem;
 }
+header #gnb ul li {
+  margin: 0 5px;
+}
 
 header #gnb ul li a {
   font-size: 0.9rem;
   line-height: 1.35rem;
+  padding: 0 5px;
   color: white;
 }
+/* 탑높이, 구분선 높이가 넓이에따라 달라짐... */
+/* header #gnb ul li a::after {
+  content: " | ";
+  position: absolute;
+  width: 0;
+  left: -5px;
+  top: 2px;
+  line-height: 1.45em;
+  background-color: white;
+}
+header #gnb ul li:first-child a::after {
+  display: none;
+} */
+
 .navbar {
   width: 70%;
   padding: 0;
@@ -80,6 +103,11 @@ header #gnb ul li a {
   --bs-nav-link-color: black;
   --bs-nav-link-hover-color: black;
   --bs-nav-link-disabled-color: black;
+}
+.nav-item {
+  width: 13%;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 /*해더 메인이미지*/
 .header_main {
@@ -124,10 +152,7 @@ main .wrap .event_text p {
   text-decoration: underline;
 }
 /* EVENT 그리드 */
-main .wrap {
-  width: 70%;
-  margin: 0 auto;
-}
+
 main .wrap .grid {
   margin: 0 auto;
   width: 100%;
@@ -204,4 +229,11 @@ main .wrap .grid div {
 
 .row > * {
   padding: 0.75rem;
+}
+
+/* Notice 섹션 */
+.notice_wrap {
+  border: 1px solid rgb(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
 }
