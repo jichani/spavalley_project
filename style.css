@@ -85,16 +85,18 @@ li {
 
 #inner_carousel .container_text div.container_text_main {
   font-size: 3.125rem;
-  text-align: right;
   font-weight: 600;
   margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #outer_carousel .container_text div.container_text_main {
   font-size: 3.125rem;
-  text-align: left;
   font-weight: 600;
   margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .container_text div .blue_color {
@@ -219,13 +221,19 @@ li {
   transform: scale(1.1);
 } */
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 1010px) {
   section {
-    height: 100vw;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
   }
 
   .wrap {
     width: 90%;
+
   }
 
   .inner {
@@ -237,13 +245,43 @@ li {
     border-radius: 10px;
   }
 
+  :root {
+    /* size */
+    --slide-width: 16vw;
+    --slide-margin: 1.8vw;
+  }
+
+  .slide_wrapper {
+    /* 5개의 이미지와 4개의 마진을 계산 */
+    width: 87.2vw;
+    height: 23vw;
+  }
+
   #inner_carousel .container_text div.container_text_main {
     font-size: 5rem;
     text-align: left;
+    display: block;
+  }
+
+  #inner_carousel .container_text {
+    width: 100%;
+  }
+
+  #outer_carousel .container_text {
+    width: 100%;
   }
 
   #outer_carousel .container_text div.container_text_main {
     font-size: 5rem;
+    display: block;
+  }
+
+  #inner_carousel .container_text {
+    margin-right: 0;
+  }
+
+  #outer_carousel .container_text {
+    margin-left: 0;
   }
 
   #inner_carousel .container_text p {
@@ -256,6 +294,6 @@ li {
   }
 
   #outer_carousel .container_section {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }

@@ -9,7 +9,21 @@ let $slides = document.querySelector("#outer_slides"),
   timer = undefined,
 
   slideWidth = 12.4166,
-  slideMargin = 1.5625;
+  slideMargin = 1.5625,
+
+  currentWidth = window.innerWidth;
+
+// 반응형 구현 위해서
+addEventListener("resize", () => {
+  currentWidth = window.innerWidth;
+  console.log(currentWidth);
+
+  if (currentWidth < 1010) {
+    slideWidth = 16;
+    slideMargin = 1.8;
+  }
+});
+
 
 function makeClone() {
   // slides li 뒤 쪽에 자식들을 추가해줌
