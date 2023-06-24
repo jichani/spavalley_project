@@ -49,6 +49,10 @@ li {
   list-style: none;
 }
 
+ul {
+  padding-left: 0;
+}
+
 /* 컨테이너 텍스트 부분 */
 
 #inner_carousel {
@@ -165,7 +169,7 @@ li {
   /* 5개의 이미지와 4개의 마진을 계산 */
   width: 68.333vw;
   margin: 0 auto;
-  height: 18.625vw;
+  height: 19.625vw;
   overflow: hidden;
 }
 
@@ -202,7 +206,6 @@ li {
 }
 
 .slides div p.main_text {
-  margin-top: 0.5rem !important;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -246,9 +249,8 @@ li {
     padding-bottom: 25.5814em;
   }
 
-  .wrap {
+  main .wrap {
     width: 90%;
-
   }
 
   .inner {
@@ -301,13 +303,13 @@ li {
     display: block;
     line-height: 1.2;
 
-    margin-bottom: 4.6512rem;
+    margin-bottom: 4.6512rem !important;
   }
 
   .slides div p.main_text {
     margin-top: 1rem !important;
     font-size: 2.65rem !important;
-    font-weight: bold !important;
+    font-weight: bold;
   }
 
   .slides div p.sub_text {
@@ -319,7 +321,7 @@ li {
   }
 
   .container_text p:nth-child(3) {
-    margin-bottom: 4.6512rem;
+    margin-bottom: 4.6512rem !important;
   }
 
   .img_mb {

@@ -1,119 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    
-    <title>워터파크 스파벨리</title>
-  </head>
-  <body>
-    <header>
-      <div class="bg-dark">
-        <div class="container">
-          <nav id="gnb">
-            <h4>운영시간 : 10:00 ~ 20:00</h4>
-            <ul>
-              <li><a href="#">로그인</a></li>
-              <div class="vr"></div>
-              <li><a href="#">회원가입</a></li>
-              <li><a href="#">ENG</a></li>
-            </ul>
-        </div>
-        </nav>
-        </div>
-    </header>
-      <div class="sticky-top bg-light">
-        <nav class="navbar navbar-expand-lg ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./images/main_images/main_logo1.png" alt="" /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse me-auto" id="navbarNav">
-              <ul class="navbar-nav w-100 justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">워터파크</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">이용안내</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">시설안내</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">이벤트&할인</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">온라인예매</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">커뮤니티</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">기업특판</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/carousel.css" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <title>워터파크 스파벨리</title>
+</head>
+
+<body>
+  <header>
+    <div class="bg-dark">
+      <div class="container">
+        <nav id="gnb">
+          <h4>운영시간 : 10:00 ~ 20:00</h4>
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <div class="vr"></div>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
       </div>
-    
-    <div class="header_main">
-      <!-- <div class="container-fluid"><img src="./images/main_images/main.jpg" class='container-fluid'alt="" /></div> -->
-      <video src="./videos/spavalley_main_video_5.mp4" autoplay muted loop class="container-fluid w-100"></video>
-      <div class="sc_icon"><img src="./images/main_images/scrollDown.svg" alt="" /></div>
+      </nav>
     </div>
-    <main>
-      <div class="wrap">
-        <div>
-          <div class="event_text">
-            <h2>EVENT</h2>
-            <p>더보기</p>
-          </div>
-          <div class="grid">
-            <div id="item1"><img src="./images/main_images/event/event_img.png" alt="" /></div>
-            <div id="item2"><img src="./images/main_images/event/nocash.jpg" alt="" /></div>
-            <div id="item3"><img src="./images/main_images/event/discount.gif" alt="" /></div>
-            <div id="item4"><img src="./images/main_images/event/organization.gif" alt="" /></div>
-            <div id="item5"><img src="./images/main_images/event/student.jpg" alt="" /></div>
-            <div id="item6"><img src="./images/main_images/event/payment_long.jpg" alt="" /></div>
-          </div>
+  </header>
+  <div class="sticky-top bg-light">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./images/main_images/main_logo1.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-auto" id="navbarNav">
+          <ul class="navbar-nav w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">워터파크</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">이용안내</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">시설안내</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">이벤트&할인</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">온라인예매</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">커뮤니티</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">기업특판</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="wrap">
-        <div>
-          <h2>현장 스케치</h2>
-          <p>생동감 넘치는 워터파크 스파밸리 현장</p>
+    </nav>
+  </div>
+
+  <div class="header_main">
+    <!-- <div class="container-fluid"><img src="./images/main_images/main.jpg" class='container-fluid'alt="" /></div> -->
+    <video src="./videos/spavalley_main_video_5.mp4" autoplay muted loop class="container-fluid w-100"></video>
+    <div class="sc_icon"><img src="./images/main_images/scrollDown.svg" alt="" /></div>
+  </div>
+  <main>
+    <div class="wrap">
+      <div>
+        <div class="event_text">
+          <h2>EVENT</h2>
+          <p>더보기</p>
         </div>
-        <div class="ut_wrap">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="grid">
+          <div id="item1"><img src="./images/main_images/event/event_img.png" alt="" /></div>
+          <div id="item2"><img src="./images/main_images/event/nocash.jpg" alt="" /></div>
+          <div id="item3"><img src="./images/main_images/event/discount.gif" alt="" /></div>
+          <div id="item4"><img src="./images/main_images/event/organization.gif" alt="" /></div>
+          <div id="item5"><img src="./images/main_images/event/student.jpg" alt="" /></div>
+          <div id="item6"><img src="./images/main_images/event/payment_long.jpg" alt="" /></div>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+
+    <section id="inner_carousel">
+      <div class="wrap">
+        <div class="container_section">
+          <div class="container_text">
+            <div class="container_text_main mb-3">
+              스파밸리&nbsp;
+              <div>
+                <span class="blue_color">실내</span>
+                워터파크
+              </div>
+            </div>
+
+            <p>2층의 펀펀존은 아이들을 위한 어린이풀과 워터 마사지</p>
+            <p class="mb-3">시스템의 바데풀, 온천사우나 시설이 완비</p>
+
+            <p>4층에는 온천수를 이용한 사우나 시설이 갖춰져 있어</p>
+            <p>고객 여러분께 편안한 휴식을 드립니다.</p>
+          </div>
+
+          <div class="inner">
+            <img src="./images/main_images/carousel_first/Bathe_Pool.jpg" alt="Bathe_Pool" id="inner_img" />
+          </div>
+        </div>
+
+        <p class="controls">
+          <i class="fa-solid fa-angle-left"></i>
+          <i class="fa-solid fa-angle-right"></i>
+        </p>
+
+        <div class="slide_wrapper">
+          <ul class="slides" id="inner_slides">
+            <div>
+              <img src="./images/main_images/carousel_first/Bathe_Pool.jpg" alt="Bathe_Pool" />
+              <p>바데풀</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_first/Kids_Pool(1).jpg" alt="Kids_Pool(1)" />
+              <p>키즈풀</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_first/Doctor_Fish_Full_Bath.jpg" alt="Doctor_Fish_Full_Bath" />
+              <p class="main_text mt-2">닥터피쉬</p>
+              <p class="main_text mt-0">전신탕</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_first/Spa_Sauna.jpg" alt="Spa_Sauna" />
+              <p>온천사우나</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_first/Kids_Pool.jpg" alt="Kids_Pool" />
+              <p>어린이풀</p>
+              <p class="sub_text">운행중</p>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="outer_carousel">
+      <div class="wrap">
+        <!-- 캐러셀 -->
+        <div class="container_section">
+          <div class="inner">
+            <img src="./images/main_images/carousel_second/Amazone.jpg" alt="Amazone" id="outer_img" />
+          </div>
+
+          <div class="container_text">
+            <div class="container_text_main mb-3">
+              스파밸리&nbsp;
+              <div><span class="blue_color"> 야외</span> 워터파크</div>
+            </div>
+
+            <p>동양 최대 26m 높이의 스피드 슬라이드와
+            </p>
+            <p class="mb-3">트위스트 슬라이드 부메랑&슈퍼볼 등의 다양한 슬라이드류 완비</p>
+
+            <p>바다를 담은 듯한 파도풀은 스릴 만점의 아찔함을</p>
+            <p>남녀노소 한가로이 즐길 수 있는 250m 길이의 유수풀과</p>
+            <p>25m 수영장은 여유로운 즐거움을 선사하며 건강함을 가득담은</p>
+            <p>노천오행탕은 여러분의 피로까지 씻어줄 것입니다.</p>
+          </div>
+
+        </div>
+
+        <p class="controls">
+          <i class="fa-solid fa-angle-left prev"></i>
+          <i class="fa-solid fa-angle-right next"></i>
+        </p>
+
+        <div class="slide_wrapper">
+          <ul class="slides" id="outer_slides">
+            <div>
+              <img src="./images/main_images/carousel_second/Amazone.jpg" alt="Amazone" class="outer_slides_img" />
+              <p>아마존</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Beach_Bed.jpg" alt="Beach_Bed" class="outer_slides_img" />
+              <p>비치베드</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Boomerang.jpg" alt="Boomerang" />
+              <p>아마존</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Diving_Pool.jpg" alt="Diving_Pool" />
+              <p>다이빙풀</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Dragon_Slide.jpg" alt="Dragon_Slide" class="img_mb" />
+              <p class="main_text mt-2">드래곤</p>
+              <p class="main_text mt-0">슬라이드</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Farmstay.jpg" alt="Farmstay" />
+              <p>팜스테이</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Gold_Coast.jpg" alt="Gold_Coast" />
+              <p>파도풀</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Jungle_Aqua.jpg" alt="Jungle_Aqua" />
+              <p>정글아쿠아</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Open_air_Bath.jpg" alt="Open_air_Bath" />
+              <p>노천오행탕</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Speed_Slide.jpg" alt="Speed_Slide" class="img_mb" />
+
+              <p class="main_text mt-2">스피드</p>
+              <p class="main_text mt-0">슬라이드</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Super_Bowl.jpg" alt="Super_Bowl" />
+              <p>슈퍼볼</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Tent.jpg" alt="Tent" />
+              <p>텐트</p>
+              <p class="sub_text">운행중</p>
+            </div>
+            <div>
+              <img src="./images/main_images/carousel_second/Twist_Slide.jpg" alt="Twist_Slide" class="img_mb" />
+              <p class="main_text mt-2">트위스트</p>
+              <p class="main_text mt-0">슬라이드</p>
+              <p class="sub_text">운행중</p>
+            </div>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div>
+        <h2>현장 스케치</h2>
+        <p>생동감 넘치는 워터파크 스파밸리 현장</p>
+      </div>
+      <div class="ut_wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/a5bbbba078.js" crossorigin="anonymous"></script>
+  <script src="./js/carousel.js"></script>
+</body>
+
 </html>
