@@ -142,7 +142,7 @@ ul {
   background: rgba(255, 255, 255, 0.7);
 
   position: relative;
-  bottom: 3.5vw;
+  bottom: 3.2vw;
   left: 33.8vw;
 
   border-radius: 5%;
@@ -359,12 +359,17 @@ ul {
     font-size: 5vw;
     padding: 2vw 3vw;
 
-    bottom: 12.5vw;
-    left: 0.5vw;
+    bottom: 9.4vw;
+    left: 0.4vw;
   }
 
   .controls i:nth-child(1) {
-    border-bottom-left-radius: 15%;
+    border-bottom-left-radius: 12%;
+
+  }
+
+  .controls i:nth-child(2) {
     border-bottom-right-radius: 0;
+
   }
 }
