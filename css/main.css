@@ -223,9 +223,6 @@ main .wrap .grid div {
   width: 100%;
   height: 100%;
 }
-.ytp-cued-thumbnail-overlay > .ytp-large-play-button {
-  width: 3rem !important;
-}
 
 .row > * {
   padding: 0.75rem;
@@ -236,4 +233,11 @@ main .wrap .grid div {
   border: 1px solid rgb(0, 0, 0, 0.4);
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+}
+
+/* 푸터 텍스트 */
+
+.footer_text {
+  font-size: 0.75rem;
+  color: #ccc;
 }
