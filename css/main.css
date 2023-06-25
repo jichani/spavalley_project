@@ -38,6 +38,7 @@ section {
   width: 70%;
   margin: 0 auto;
 }
+
 html {
   /* 1920px 기준 16.0000128px */
   font-size: 0.833334vw;
@@ -152,7 +153,9 @@ main .wrap .event_text p {
   text-decoration: underline;
 }
 /* EVENT 그리드 */
-
+.grid_wrap {
+  padding: 6.39535em 0;
+}
 main .wrap .grid {
   margin: 0 auto;
   width: 100%;
@@ -204,6 +207,12 @@ main .wrap .grid div {
 
 /* 현장스케치 유투브 */
 /* 현장스케치 텍스트 */
+article {
+  background-color: #f0f2f9;
+}
+article .wrap {
+  padding: 6.39535em 0;
+}
 #scene_sketch .text_sketch {
   text-align: center;
   margin-top: 3.625rem;
@@ -240,4 +249,17 @@ main .wrap .grid div {
 .footer_text {
   font-size: 0.75rem;
   color: #ccc;
+}
+
+/* 미디어 쿼라 */
+@media only screen and (max-width: 576px) {
+  .change_576_text {
+    text-align: center;
+    font-size: 2.7907vw;
+  }
+  svg {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+  }
 }
