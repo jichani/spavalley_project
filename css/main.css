@@ -110,6 +110,7 @@ header #gnb ul li:first-child a::after {
   font-size: 1.2rem;
   font-weight: 500;
 }
+
 /*해더 메인이미지*/
 .header_main {
   width: 100%;
@@ -262,4 +263,34 @@ article .wrap {
     height: 5rem;
     margin: 2rem;
   }
+}
+
+/* nav_side */
+#nav_to {
+  cursor: pointer;
+}
+#nav_close {
+  cursor: pointer;
+}
+header {
+  position: relative;
+}
+.nav_side {
+  position: fixed;
+  width: 70%;
+  height: 200vw;
+  background: #3e93cd;
+  opacity: 0%;
+  top: 0;
+  right: -70%;
+  transition: all 0.5s;
+}
+.nav_side.active2 {
+  right: 0 !important;
+  opacity: 90%;
+  z-index: 9999;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc !important;
 }
