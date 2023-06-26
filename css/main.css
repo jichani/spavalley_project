@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -212,7 +211,7 @@ article {
   background-color: #f0f2f9;
 }
 article .wrap {
-  padding: 6.39535em 0;
+  padding: 3rem 0;
 }
 #scene_sketch .text_sketch {
   text-align: center;
@@ -240,9 +239,18 @@ article .wrap {
 
 /* Notice 섹션 */
 .notice_wrap {
-  border: 1px solid rgb(0, 0, 0, 0.4);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+  border: 1px solid rgb(204, 204, 204, 0.8);
+  background-color: white;
+}
+.text_bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.text_middle {
+  font-size: 2rem;
+}
+.text_middle_height {
+  height: 8rem;
 }
 
 /* 푸터 텍스트 */
@@ -262,6 +270,11 @@ article .wrap {
     width: 5rem;
     height: 5rem;
     margin: 2rem;
+  }
+}
+@media only screen and (max-width: 1019px) {
+  main .wrap {
+    width: 90%;
   }
 }
 
