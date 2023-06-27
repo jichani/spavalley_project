@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -72,19 +71,6 @@ header #gnb ul li a {
   padding: 0 5px;
   color: white;
 }
-/* 탑높이, 구분선 높이가 넓이에따라 달라짐... */
-/* header #gnb ul li a::after {
-  content: " | ";
-  position: absolute;
-  width: 0;
-  left: -5px;
-  top: 2px;
-  line-height: 1.45em;
-  background-color: white;
-}
-header #gnb ul li:first-child a::after {
-  display: none;
-} */
 
 .navbar {
   width: 70%;
@@ -110,6 +96,7 @@ header #gnb ul li:first-child a::after {
   font-size: 1.2rem;
   font-weight: 500;
 }
+
 /*해더 메인이미지*/
 .header_main {
   width: 100%;
@@ -211,7 +198,7 @@ article {
   background-color: #f0f2f9;
 }
 article .wrap {
-  padding: 6.39535em 0;
+  padding: 3rem 0;
 }
 #scene_sketch .text_sketch {
   text-align: center;
@@ -239,9 +226,18 @@ article .wrap {
 
 /* Notice 섹션 */
 .notice_wrap {
-  border: 1px solid rgb(0, 0, 0, 0.4);
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+  border: 1px solid rgb(204, 204, 204, 0.8);
+  background-color: white;
+}
+.text_bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.text_middle {
+  font-size: 2rem;
+}
+.text_middle_height {
+  height: 8rem;
 }
 
 /* 푸터 텍스트 */
@@ -249,6 +245,11 @@ article .wrap {
 .footer_text {
   font-size: 0.75rem;
   color: #ccc;
+}
+.footer_sns > div:nth-child(2) img {
+  height: 34px;
+  width: 34px;
+  padding: 2px;
 }
 
 /* 미디어 쿼라 */
@@ -260,6 +261,160 @@ article .wrap {
   svg {
     width: 5rem;
     height: 5rem;
-    margin: 2rem;
   }
+  .footer_sns > div {
+    width: 10%;
+  }
+  /* .footer_sns > div:nth-child(2) {
+    height: 30px;
+  } */
+}
+@media only screen and (max-width: 992px) {
+  .navbar {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1019px) {
+  main .wrap {
+    width: 90%;
+  }
+}
+
+/* nav_side */
+/* #nav_to {
+  cursor: pointer;
+}
+#nav_close {
+  cursor: pointer;
+}
+header {
+  position: relative;
+}
+.nav_side {
+  position: fixed;
+  width: 70%;
+  height: 200vw;
+  background: #3e93cd;
+  opacity: 0%;
+  top: 0;
+  right: -70%;
+  transition: all 0.5s;
+}
+.nav_side.active2 {
+  right: 0 !important;
+  opacity: 90%;
+  z-index: 9999;
+}
+
+*/
+.navbar-toggler {
+  border: none;
+}
+input[id="menuToggle"] {
+  display: none;
+}
+input[id="menuToggle"] + label {
+  display: block;
+  width: 25px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  z-index: 555;
+}
+input[id="menuToggle"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.35s;
+}
+input[id="menuToggle"] + label span:nth-child(1) {
+  top: 0;
+}
+input[id="menuToggle"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="menuToggle"] + label span:last-child {
+  bottom: 0;
+}
+
+input[id="menuToggle"]:checked + label span:nth-child(1) {
+  top: 50%;
+  background-color: #fff;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuToggle"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id="menuToggle"]:checked + label span:last-child {
+  bottom: 50%;
+  background-color: #fff;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.sidebar {
+  width: 70%;
+  height: 100vh;
+  background-color: #3e93cd;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1;
+  transition: all 0.35s;
+}
+input#menuToggle:checked + label + div {
+  right: 0;
+}
+
+.sidebar {
+  padding-top: 80px;
+  opacity: 90%;
+}
+.accordion {
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-icon-width: 3rem;
+  --bs-accordion-btn-icon: url("../images/insta.png") !important;
+}
+.accordion-button::after {
+  background-image: url("../images/arrowdown.png") !important;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  width: 81.1%;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.accordion-button.collapsed {
+  background-color: #3e93cd;
+  box-shadow: 0;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #3e93cd;
+  box-shadow: 0 !important;
+}
+
+.accordion-item {
+  border: 0;
+  background-color: 0;
+  padding: 5px 20px;
+  color: white;
+  font-size: 2.5rem;
+  position: relative;
+}
+.accordion-item::after {
+  content: "";
+  width: 120%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid white;
 }
