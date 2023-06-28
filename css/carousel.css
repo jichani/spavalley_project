@@ -193,6 +193,7 @@ ul {
   /* border-radius: 50%; */
 }
 
+
 .slides div:not(:last-child) {
   margin-right: var(--slide-margin);
 }
@@ -230,6 +231,8 @@ ul {
   overflow: hidden;
   object-fit: cover;
   /* transition: all 0.2s linear; */
+
+  filter: brightness(50%);
 }
 
 /* .slides div img:hover {
