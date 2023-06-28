@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -102,7 +103,15 @@ header #gnb .gnb_login li a {
 }
 .navbar-brand img {
   width: 80%;
+  transition: 0.3s;
 }
+.navbar-brand.scdown img {
+  width: 60%;
+}
+#navbarNav {
+  transition: 0.3s;
+}
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
