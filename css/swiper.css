@@ -1,0 +1,23 @@
+.swiper {
+    width: 20rem;
+    height: 3.750rem;
+
+    /* border: 1px solid red; */
+}
+
+.swiper-slide {
+    text-align: left;
+    font-size: 1.125rem;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* 
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
