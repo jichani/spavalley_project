@@ -538,12 +538,3 @@ input#menuToggle:checked+label+div {
   font-weight: 600;
   font-size: 1.875rem;
 }
-
-i.fa-x {
-  color: red;
-  font-weight: 600;
-
-  font-size: 1.3em;
-
-  margin-left: 1.250rem;
-}
