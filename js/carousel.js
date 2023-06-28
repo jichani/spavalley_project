@@ -186,14 +186,17 @@ window.addEventListener('resize', function () {
 
 // 이미지 클릭했을 때 변하게 하기 위해서
 function innerButtonClickHandler() {
-  $inner_img.src = `./images/main_images/carousel_first/${this.alt}.jpg`;
-}
-function outerButtonClickHandler() {
-  $outer_img.src = `./images/main_images/carousel_second/${this.alt}.jpg`;
+  const alt = this.parentNode.querySelector("img").alt;
+  $inner_img.src = `./images/main_images/carousel_first/${alt}.jpg`;
 }
 
-let $$inner_buttons = document.querySelectorAll("#inner_slides div img");
-let $$outer_buttons = document.querySelectorAll("#outer_slides div img");
+function outerButtonClickHandler() {
+  const alt = this.parentNode.querySelector("img").alt;
+  $outer_img.src = `./images/main_images/carousel_second/${alt}.jpg`;
+}
+
+let $$inner_buttons = document.querySelectorAll("#inner_slides div img, #inner_slides div p.sub_text, #inner_slides div i.fa-x");
+let $$outer_buttons = document.querySelectorAll("#outer_slides div img, #outer_slides div p.sub_text");
 
 $$inner_buttons.forEach((button) => {
   button.addEventListener("click", innerButtonClickHandler);

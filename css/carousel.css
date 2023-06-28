@@ -230,7 +230,6 @@ ul {
   font-size: 1.8rem;
   margin-top: 2.5rem;
   cursor: pointer;
-
 }
 
 
@@ -285,7 +284,7 @@ ul {
   .slide_wrapper {
     /* 5개의 이미지와 4개의 마진을 계산 */
     width: 87.2vw;
-    height: 38vw;
+    height: 26vw;
   }
 
   .slides div p:not(:first-child) {
