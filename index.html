@@ -28,8 +28,27 @@
       <div class="bg-dark">
         <div class="wrap">
           <nav id="gnb">
-            <h4>운영시간 : 10:00 ~ 20:00</h4>
-            <ul>
+            <ul class="gnb_branch">
+              <li>
+                <a href="#">
+                  <input type="radio" id="tab-1" name="tab-group-1" checked />
+                  <label for="tab-1">워터파크 스파밸리</label>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <input type="radio" id="tab-2" name="tab-group-1" />
+                  <label for="tab-2">네이쳐파크</label>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <input type="radio" id="tab-3" name="tab-group-1" />
+                  <label for="tab-3">호텔 드 포레</label>
+                </a>
+              </li>
+            </ul>
+            <ul class="gnb_login">
               <li><a class="_after" href="#">로그인 </a></li>
               <span class="after_line"> | </span>
               <li><a class="_after" href="#">회원가입</a></li>
@@ -234,7 +253,7 @@
               </div>
             </div>
           </div>
-          <div class="collapse navbar-collapse me-auto" id="navbarNav">
+          <div class="collapse navbar-collapse me-auto pt-3" id="navbarNav">
             <ul class="navbar-nav w-100 justify-content-end text-end">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">워터파크</a>
@@ -651,24 +670,5 @@
     <!-- js 스크립트 -->
     <script src="https://kit.fontawesome.com/a5bbbba078.js" crossorigin="anonymous"></script>
     <script src="./js/carousel.js"></script>
-    <script>
-      // const $navTo=document.querySelector('#nav_to')
-      // const $navClose=document.querySelector('#nav_close')
-      // const $navTaget=document.querySelector('#nav_taget')
-      // console.log(!$navTo.classList.contains('active2'))
-      //  $navTo.addEventListener('click',()=>{
-
-      //   if($navTo.classList.contains('active2')){
-      //     $navTo.classList.add('active2')
-      //     console.log($navTo)
-      //   }else {
-      //     $navTo.classList.add('active2')
-      //   }
-
-      // })
-      // $navClose.addEventListener('click',()=>{
-      //   $navTaget.classList.remove('active2')
-      // })
-    </script>
   </body>
 </html>
