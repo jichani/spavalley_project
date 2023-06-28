@@ -148,12 +148,11 @@ main .wrap .grid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(auto, 15rem);
+  grid-auto-rows: minmax(auto, 20rem);
   grid-gap: 1.25rem;
   grid-template-areas:
-    "a a f f "
-    "b c f f "
-    "d e f f";
+    "c d e f"
+    "b a a f";
 }
 
 main .wrap .grid img {
@@ -187,6 +186,12 @@ main .wrap .grid div {
 #item6 {
   grid-area: f;
 }
+#item6 img:first-child {
+  display: block;
+}
+#item6 img:last-child {
+  display: none;
+}
 
 .ut_wrap div {
   width: 50%;
@@ -219,25 +224,29 @@ article .wrap {
   width: 100%;
   height: 100%;
 }
+.ytp-large-play-button-red-bg {
+  display: none !important;
+}
 
 .row > * {
   padding: 0.75rem;
+}
+
+.text_bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.text_middle {
+  font-size: 1.5rem;
+}
+.text_middle_height {
+  height: 6rem;
 }
 
 /* Notice 섹션 */
 .notice_wrap {
   border: 1px solid rgb(204, 204, 204, 0.8);
   background-color: white;
-}
-.text_bold {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.text_middle {
-  font-size: 2rem;
-}
-.text_middle_height {
-  height: 8rem;
 }
 
 /* 푸터 텍스트 */
@@ -254,6 +263,29 @@ article .wrap {
 
 /* 미디어 쿼라 */
 @media only screen and (max-width: 576px) {
+  main .wrap .grid {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-rows: minmax(20rem, auto);
+    grid-gap: 1.25rem;
+    grid-template-areas:
+      "a a "
+      "b c"
+      "e d"
+      "f f";
+  }
+  #item6 img:first-child {
+    display: none;
+  }
+  #item6 img:last-child {
+    display: block;
+  }
+  #item6 {
+    grid-area: f;
+  }
+
   .change_576_text {
     text-align: center;
     font-size: 2.7907vw;
@@ -265,9 +297,6 @@ article .wrap {
   .footer_sns > div {
     width: 10%;
   }
-  /* .footer_sns > div:nth-child(2) {
-    height: 30px;
-  } */
 }
 @media only screen and (max-width: 992px) {
   .navbar {
@@ -278,35 +307,13 @@ article .wrap {
   main .wrap {
     width: 90%;
   }
+  main .wrap .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(20rem, auto);
+  }
 }
 
-/* nav_side */
-/* #nav_to {
-  cursor: pointer;
-}
-#nav_close {
-  cursor: pointer;
-}
-header {
-  position: relative;
-}
-.nav_side {
-  position: fixed;
-  width: 70%;
-  height: 200vw;
-  background: #3e93cd;
-  opacity: 0%;
-  top: 0;
-  right: -70%;
-  transition: all 0.5s;
-}
-.nav_side.active2 {
-  right: 0 !important;
-  opacity: 90%;
-  z-index: 9999;
-}
-
-*/
+/* 사이드 + 토글  */
 .navbar-toggler {
   border: none;
 }
