@@ -1,0 +1,427 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0 !important;
+  box-sizing: border-box;
+  font-family: "Pretendard-Regular";
+}
+li {
+  display: inline-block;
+  text-decoration: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+h2 {
+  font-size: 2.083333vw;
+  font-weight: bold;
+}
+section {
+  /* width: 100vw; */
+  /* 1060px == 66.25em */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+
+html {
+  /* 1920px 기준 16.0000128px */
+  font-size: 0.833334vw;
+}
+#main_video {
+  outline: none;
+  border: none;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+/*해더부분*/
+header #gnb {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+header #gnb h4 {
+  font-size: 0.9rem;
+  line-height: 1.35rem;
+}
+header #gnb ul li {
+  margin: 0 5px;
+}
+
+header #gnb ul li a {
+  font-size: 0.9rem;
+  line-height: 1.35rem;
+  padding: 0 5px;
+  color: white;
+}
+
+.navbar {
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-nav .nav-link.active {
+  color: black;
+}
+.collapse > .navbar-nav {
+  --bs-nav-link-color: black;
+  --bs-nav-link-hover-color: black;
+  --bs-nav-link-disabled-color: black;
+}
+.nav-item {
+  width: 13%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/*해더 메인이미지*/
+.header_main {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.header_main > div:first > img {
+  width: 100%;
+}
+
+.header_main > .sc_icon > img {
+  width: 1.875rem;
+  position: absolute;
+  bottom: 2.5rem;
+  left: calc(50% - 0.9375rem);
+  animation: upDown 1.5s ease-in-out infinite;
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(-7px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
+
+/* EVENT_TEXT */
+main .wrap .event_text {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem 0;
+}
+
+main .wrap .event_text p {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+/* EVENT 그리드 */
+.grid_wrap {
+  padding: 6.39535em 0;
+}
+main .wrap .grid {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(auto, 20rem);
+  grid-gap: 1.25rem;
+  grid-template-areas:
+    "c d e f"
+    "b a a f";
+}
+
+main .wrap .grid img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+main .wrap .grid div {
+  border-radius: 10px;
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  border-left: 1px solid rgb(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
+}
+#item1 {
+  grid-area: a;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+}
+#item2 {
+  grid-area: b;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+}
+#item3 {
+  grid-area: c;
+}
+#item4 {
+  grid-area: d;
+}
+#item5 {
+  grid-area: e;
+}
+#item6 {
+  grid-area: f;
+}
+#item6 img:first-child {
+  display: block;
+}
+#item6 img:last-child {
+  display: none;
+}
+
+.ut_wrap div {
+  width: 50%;
+}
+
+/* 현장스케치 유투브 */
+/* 현장스케치 텍스트 */
+article {
+  background-color: #f0f2f9;
+}
+article .wrap {
+  padding: 3rem 0;
+}
+#scene_sketch .text_sketch {
+  text-align: center;
+  margin-top: 3.625rem;
+}
+#scene_sketch .text_sketch p {
+  font-size: 1.25rem;
+}
+
+.video_wrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.video_wrap iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.ytp-large-play-button-red-bg {
+  display: none !important;
+}
+
+.row > * {
+  padding: 0.75rem;
+}
+
+.text_bold {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.text_middle {
+  font-size: 1.5rem;
+}
+.text_middle_height {
+  height: 6rem;
+}
+
+/* Notice 섹션 */
+.notice_wrap {
+  border: 1px solid rgb(204, 204, 204, 0.8);
+  background-color: white;
+}
+
+/* 푸터 텍스트 */
+
+.footer_text {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+.footer_sns > div:nth-child(2) img {
+  height: 34px;
+  width: 34px;
+  padding: 2px;
+}
+
+/* 미디어 쿼라 */
+@media only screen and (max-width: 576px) {
+  main .wrap .grid {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-rows: minmax(20rem, auto);
+    grid-gap: 1.25rem;
+    grid-template-areas:
+      "a a "
+      "b c"
+      "e d"
+      "f f";
+  }
+  #item6 img:first-child {
+    display: none;
+  }
+  #item6 img:last-child {
+    display: block;
+  }
+  #item6 {
+    grid-area: f;
+  }
+
+  .change_576_text {
+    text-align: center;
+    font-size: 2.7907vw;
+  }
+  svg {
+    width: 5rem;
+    height: 5rem;
+  }
+  .footer_sns > div {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1019px) {
+  main .wrap {
+    width: 90%;
+  }
+  main .wrap .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(20rem, auto);
+  }
+}
+
+/* 사이드 + 토글  */
+.navbar-toggler {
+  border: none;
+}
+input[id="menuToggle"] {
+  display: none;
+}
+input[id="menuToggle"] + label {
+  display: block;
+  width: 25px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  z-index: 555;
+}
+input[id="menuToggle"] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.35s;
+}
+input[id="menuToggle"] + label span:nth-child(1) {
+  top: 0;
+}
+input[id="menuToggle"] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+input[id="menuToggle"] + label span:last-child {
+  bottom: 0;
+}
+
+input[id="menuToggle"]:checked + label span:nth-child(1) {
+  top: 50%;
+  background-color: #fff;
+  transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuToggle"]:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+input[id="menuToggle"]:checked + label span:last-child {
+  bottom: 50%;
+  background-color: #fff;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.sidebar {
+  width: 70%;
+  height: 100vh;
+  background-color: #3e93cd;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1;
+  transition: all 0.35s;
+}
+input#menuToggle:checked + label + div {
+  right: 0;
+}
+
+.sidebar {
+  padding-top: 80px;
+  opacity: 90%;
+}
+.accordion {
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-icon-width: 3rem;
+  --bs-accordion-btn-icon: url("../images/insta.png") !important;
+}
+.accordion-button::after {
+  background-image: url("../images/arrowdown.png") !important;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  width: 81.1%;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 5px;
+}
+.accordion-button.collapsed {
+  background-color: #3e93cd;
+  box-shadow: 0;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #3e93cd;
+  box-shadow: 0 !important;
+}
+
+.accordion-item {
+  border: 0;
+  background-color: 0;
+  padding: 5px 20px;
+  color: white;
+  font-size: 2.5rem;
+  position: relative;
+}
+.accordion-item::after {
+  content: "";
+  width: 120%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid white;
+}
