@@ -265,7 +265,7 @@ input#menuToggle:checked + label + div {
 .location {
   background-color: rgb(255, 255, 255, 0.8);
   padding: 0.5rem;
-  width: 30%;
+  width: 20%;
   top: 30%;
   position: absolute;
   z-index: 999;

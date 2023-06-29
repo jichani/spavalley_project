@@ -389,7 +389,7 @@
     <script type="text/javaScript">
       function initMap() {
            const map = new google.maps.Map(document.getElementById("map"), {
-               zoom: 17,
+               zoom: 20,
                center: { lat: 35.78809837100381, lng:  128.63544134464186 }, // 지도의 중심 좌표
            });
 
@@ -401,13 +401,12 @@
 
            // 마커 생성
            for (var i = 0; i < locations.length; i++) {
-               var mapIcon = new google.maps.MarkerImage("이미지 파일 경로"); // 이미지 파일 경로를 설정해주면 다른 마커아이콘을 쓸 수 있음!
+               var mapIcon = new google.maps.MarkerImage('map_google_marker.png'); // 이미지 파일 경로를 설정해주면 다른 마커아이콘을 쓸 수 있음!
                var marker = new google.maps.Marker({
-                   map: map,
-                   position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
-                   icon: mapIcon
-               });
-
+                     map: map,
+                     position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                     icon: mapIcon
+                 });
                google.maps.event.addListener(marker, 'click', (function(marker, i) {
                    return function() {
                        // 마커 클릭시 실행할 이벤트를 설정해줄 수 있다
