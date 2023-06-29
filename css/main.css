@@ -602,6 +602,10 @@ input#menuToggle:checked+label+div {
   article span {
     font-size: 1.7vw;
   }
+
+  .notice_section {
+    margin-bottom: 9vw !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
