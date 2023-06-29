@@ -93,7 +93,7 @@ header #gnb .gnb_branch li a label {
   vertical-align: bottom;
 }
 
-header #gnb .gnb_branch li a input:checked ~ label {
+header #gnb .gnb_branch li a input:checked~label {
   background-color: white;
   color: #3e93cd;
 }
@@ -108,9 +108,11 @@ header #gnb .gnb_login li a {
   padding: 0 5px;
   color: white;
 }
+
 .sticky-top {
   background-color: white;
 }
+
 .navbar {
   width: 70%;
   padding: 0;
@@ -140,7 +142,7 @@ header #gnb .gnb_login li a {
   color: black;
 }
 
-.collapse > .navbar-nav {
+.collapse>.navbar-nav {
   --bs-nav-link-color: black;
   --bs-nav-link-hover-color: black;
   --bs-nav-link-disabled-color: black;
@@ -159,15 +161,16 @@ header #gnb .gnb_login li a {
   overflow: hidden;
   position: relative;
 }
+
 .phone_header_img {
   display: none;
 }
 
-.header_main > div:first > img {
+.header_main>div:first>img {
   width: 100%;
 }
 
-.header_main > .sc_icon > img {
+.header_main>.sc_icon>img {
   width: 1.875rem;
   position: absolute;
   bottom: 2.5rem;
@@ -304,7 +307,7 @@ article .wrap {
   border-radius: 10px;
 }
 
-.row > * {
+.row>* {
   padding: 0.75rem;
 }
 
@@ -334,7 +337,7 @@ article .wrap {
   color: #ccc;
 }
 
-.footer_sns > div:nth-child(2) img {
+.footer_sns>div:nth-child(2) img {
   height: 34px;
   width: 34px;
   padding: 2px;
@@ -342,16 +345,19 @@ article .wrap {
 
 /* 미디어 쿼라 */
 @media only screen and (max-width: 576px) {
+
   /* 메인비디오 */
   #main_video {
     display: none;
   }
+
   .phone_header_img {
     display: block;
     width: 100%;
     object-fit: cover;
     object-position: center center;
   }
+
   .phone_header_img img {
     width: 100%;
   }
@@ -397,7 +403,7 @@ article .wrap {
     height: 5rem;
   }
 
-  .footer_sns > div {
+  .footer_sns>div {
     width: 10%;
   }
 }
@@ -406,7 +412,8 @@ article .wrap {
   header #gnb {
     display: none;
   }
-  .header_main > .sc_icon > img {
+
+  .header_main>.sc_icon>img {
     display: none;
   }
 }
@@ -433,6 +440,7 @@ article .wrap {
   header #gnb .gnb_branch li a label {
     line-height: 2rem;
   }
+
   header #gnb .gnb_branch li a label:hover {
     cursor: pointer;
   }
@@ -452,7 +460,7 @@ input[id="menuToggle"] {
   display: none;
 }
 
-input[id="menuToggle"] + label {
+input[id="menuToggle"]+label {
   display: block;
   width: 25px;
   height: 20px;
@@ -461,7 +469,7 @@ input[id="menuToggle"] + label {
   z-index: 555;
 }
 
-input[id="menuToggle"] + label span {
+input[id="menuToggle"]+label span {
   display: block;
   position: absolute;
   width: 100%;
@@ -471,30 +479,30 @@ input[id="menuToggle"] + label span {
   transition: all 0.35s;
 }
 
-input[id="menuToggle"] + label span:nth-child(1) {
+input[id="menuToggle"]+label span:nth-child(1) {
   top: 0;
 }
 
-input[id="menuToggle"] + label span:nth-child(2) {
+input[id="menuToggle"]+label span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 
-input[id="menuToggle"] + label span:last-child {
+input[id="menuToggle"]+label span:last-child {
   bottom: 0;
 }
 
-input[id="menuToggle"]:checked + label span:nth-child(1) {
+input[id="menuToggle"]:checked+label span:nth-child(1) {
   top: 50%;
   background-color: #fff;
   transform: translateY(-50%) rotate(45deg);
 }
 
-input[id="menuToggle"]:checked + label span:nth-child(2) {
+input[id="menuToggle"]:checked+label span:nth-child(2) {
   opacity: 0;
 }
 
-input[id="menuToggle"]:checked + label span:last-child {
+input[id="menuToggle"]:checked+label span:last-child {
   bottom: 50%;
   background-color: #fff;
   transform: translateY(50%) rotate(-45deg);
@@ -511,7 +519,7 @@ input[id="menuToggle"]:checked + label span:last-child {
   transition: all 0.35s;
 }
 
-input#menuToggle:checked + label + div {
+input#menuToggle:checked+label+div {
   right: 0;
 }
 
@@ -568,4 +576,71 @@ input#menuToggle:checked + label + div {
   position: absolute;
   bottom: 0;
   border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width: 1019px) {
+  h2 {
+    font-size: 3vw;
+  }
+
+  main .wrap .event_text p {
+    font-size: 2vw;
+  }
+
+  #scene_sketch .text_sketch p {
+    font-size: 2vw;
+  }
+
+  .text_bold {
+    font-size: 2vw;
+  }
+
+  article p {
+    font-size: 1.7vw;
+  }
+
+  article span {
+    font-size: 1.7vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h2 {
+    font-size: 5.5814vw;
+  }
+
+  main .wrap .event_text p {
+    font-size: 3.7209vw;
+  }
+
+  .text_sketch svg {
+    width: 10.2326vw;
+    height: 10.2326vw;
+  }
+
+  .text_sketch h2 {
+    font-size: 7.4419vw;
+  }
+
+  #scene_sketch .text_sketch p {
+    font-size: 3.2558vw;
+  }
+
+  .text_bold {
+    font-size: 3.7209vw;
+  }
+
+  .grid_wrap>div>div>div>.text_bold {
+    font-size: 5.5814vw;
+  }
+
+  article p {
+    font-size: 9px;
+  }
+
+  .notice_section p {
+    font-size: 3.2558vw;
+  }
+
+
 }
