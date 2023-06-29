@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -57,17 +58,39 @@ header #gnb {
   align-items: center;
   color: white;
 }
-header #gnb h4 {
-  font-size: 0.9rem;
-  line-height: 1.35rem;
+header #gnb .gnb_branch {
+  width: 55%;
 }
-header #gnb ul li {
+header #gnb .gnb_branch li {
+  text-align: center;
+  width: 22%;
+}
+header #gnb .gnb_branch li a {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+header #gnb .gnb_branch li a input {
+  display: none;
+}
+header #gnb .gnb_branch li a label {
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  vertical-align: bottom;
+}
+header #gnb .gnb_branch li a input:checked ~ label {
+  background-color: white;
+  color: #3e93cd;
+}
+
+header #gnb .gnb_login li {
   margin: 0 5px;
 }
 
-header #gnb ul li a {
+header #gnb .gnb_login li a {
   font-size: 0.9rem;
-  line-height: 1.35rem;
+
   padding: 0 5px;
   color: white;
 }
@@ -78,6 +101,17 @@ header #gnb ul li a {
   margin: 0 auto;
   font-size: 1rem;
 }
+.navbar-brand img {
+  width: 80%;
+  transition: 0.3s;
+}
+.navbar-brand.scdown img {
+  width: 60%;
+}
+#navbarNav {
+  transition: 0.3s;
+}
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -92,8 +126,8 @@ header #gnb ul li a {
   --bs-nav-link-disabled-color: black;
 }
 .nav-item {
-  width: 13%;
-  font-size: 1.2rem;
+  padding-left: 1.5em;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
@@ -141,19 +175,18 @@ main .wrap .event_text p {
 }
 /* EVENT 그리드 */
 .grid_wrap {
-  padding: 6.39535em 0;
+  padding: 10em 0;
 }
 main .wrap .grid {
   margin: 0 auto;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(auto, 15rem);
+  grid-auto-rows: minmax(auto, 20rem);
   grid-gap: 1.25rem;
   grid-template-areas:
-    "a a f f "
-    "b c f f "
-    "d e f f";
+    "c d e f"
+    "b a a f";
 }
 
 main .wrap .grid img {
@@ -187,6 +220,12 @@ main .wrap .grid div {
 #item6 {
   grid-area: f;
 }
+#item6 img:first-child {
+  display: block;
+}
+#item6 img:last-child {
+  display: none;
+}
 
 .ut_wrap div {
   width: 50%;
@@ -213,31 +252,34 @@ article .wrap {
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
+  border-radius: 10px;
 }
 .video_wrap iframe {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .row > * {
   padding: 0.75rem;
 }
 
-/* Notice 섹션 */
-.notice_wrap {
-  border: 1px solid rgb(204, 204, 204, 0.8);
-  background-color: white;
-}
 .text_bold {
   font-size: 1.5rem;
   font-weight: bold;
 }
 .text_middle {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .text_middle_height {
-  height: 8rem;
+  height: 6rem;
+}
+
+/* Notice 섹션 */
+.notice_wrap {
+  border: 1px solid rgb(204, 204, 204, 0.8);
+  background-color: white;
 }
 
 /* 푸터 텍스트 */
@@ -254,6 +296,29 @@ article .wrap {
 
 /* 미디어 쿼라 */
 @media only screen and (max-width: 576px) {
+  main .wrap .grid {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-auto-rows: minmax(20rem, auto);
+    grid-gap: 1.25rem;
+    grid-template-areas:
+      "a a "
+      "b c"
+      "e d"
+      "f f";
+  }
+  #item6 img:first-child {
+    display: none;
+  }
+  #item6 img:last-child {
+    display: block;
+  }
+  #item6 {
+    grid-area: f;
+  }
+
   .change_576_text {
     text-align: center;
     font-size: 2.7907vw;
@@ -265,48 +330,37 @@ article .wrap {
   .footer_sns > div {
     width: 10%;
   }
-  /* .footer_sns > div:nth-child(2) {
-    height: 30px;
-  } */
 }
 @media only screen and (max-width: 992px) {
-  .navbar {
-    width: 80%;
+  header #gnb {
+    display: none;
   }
 }
 @media only screen and (max-width: 1019px) {
+  header .wrap {
+    width: 90%;
+  }
   main .wrap {
     width: 90%;
   }
+  .navbar {
+    width: 90%;
+  }
+  .nav-item {
+    padding-left: 1.6em;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  header #gnb .gnb_branch li a label {
+    line-height: 2rem;
+  }
+  main .wrap .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(20rem, auto);
+  }
 }
 
-/* nav_side */
-/* #nav_to {
-  cursor: pointer;
-}
-#nav_close {
-  cursor: pointer;
-}
-header {
-  position: relative;
-}
-.nav_side {
-  position: fixed;
-  width: 70%;
-  height: 200vw;
-  background: #3e93cd;
-  opacity: 0%;
-  top: 0;
-  right: -70%;
-  transition: all 0.5s;
-}
-.nav_side.active2 {
-  right: 0 !important;
-  opacity: 90%;
-  z-index: 9999;
-}
-
-*/
+/* 사이드 + 토글  */
 .navbar-toggler {
   border: none;
 }
