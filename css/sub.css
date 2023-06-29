@@ -314,6 +314,9 @@ button {
   width: 34px;
   padding: 2px;
 }
+.gm-style-mtc button {
+  width: 100px;
+}
 
 @media only screen and (max-width: 576px) {
   .wrap h1 {
