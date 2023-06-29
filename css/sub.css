@@ -243,6 +243,7 @@ input#menuToggle:checked + label + div {
 
 .background {
   background-color: #f0f2f9;
+  position: relative;
 }
 /* ul */
 .title > ul {
@@ -256,13 +257,20 @@ input#menuToggle:checked + label + div {
 }
 .wrap h1 {
   margin: 1rem 0;
+  position: absolute;
+  top: 18%;
+  z-index: 999;
 }
 /* location box */
 .location {
   background-color: rgb(255, 255, 255, 0.8);
   padding: 0.5rem;
   width: 30%;
+  top: 30%;
+  position: absolute;
+  z-index: 999;
 }
+
 .text_wrap {
   padding: 1rem;
   margin-bottom: 2rem !important;
@@ -305,4 +313,13 @@ button {
   height: 34px;
   width: 34px;
   padding: 2px;
+}
+
+@media only screen and (max-width: 576px) {
+  .wrap h1 {
+    display: none;
+  }
+  .location {
+    display: none;
+  }
 }
