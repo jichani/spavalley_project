@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.swiper {
+    width: 20rem;
+    height: 3.750rem;
+}
+
+.swiper-slide {
+    text-align: left;
+    font-size: 1.125rem;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1019px) {
+    .swiper {
+        width: 70%;
+        height: 5vw;
+    }
+
+    .swiper-slide {
+        font-size: 3vw;
+    }
+}
+
+
+
+/* 버튼 이벤트 */
+
+.main_button {
+    display: flex;
+
+    border-bottom: 1px solid #eee;
+}
+
+.main_button .icon_button {
+    margin-left: 15.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_button .icon_button a {
+    display: flex;
+    align-items: center;
+}
+
+.main_button .icon_button img {
+    width: 2.875rem;
+}
+
+.main_button .icon_button p {
+    margin-left: 0.875rem;
+    margin-right: 1.875rem;
+
+    font-size: 1.125rem;
+}
+
+.main_button .icon_button div {
+    margin-left: 1.875rem;
+}
+
+.main_button .main_notice {
+    display: flex;
+    align-items: center;
+
+    border-left: 1px solid #eee;
+    margin-left: 1.875rem;
+    padding-left: 1.875rem;
+
+
+}
+
+.main_button .main_notice p {
+    margin-left: 1.500rem;
+    margin-right: 1.50rem;
+
+    color: #3e93cd;
+    font-weight: 600;
+    font-size: 1.875rem;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 1019px) {
+    .main_button {
+        flex-direction: column-reverse;
+
+        border-bottom: 0;
+    }
+
+    .main_button .icon_button {
+        margin-left: 0;
+
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .main_button .icon_button img {
+        width: 7.9070vw;
+    }
+
+    .main_button .icon_button p {
+        font-size: 2.7907vw;
+
+        margin-left: 1.8vw;
+        margin-right: 2.4vw;
+    }
+
+    .main_button .icon_button a:last-child p {
+        margin-right: 0;
+    }
+
+    .main_button .main_notice {
+        border-left: 0;
+        margin-left: 5vw;
+
+        border-bottom: 0;
+
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+
+    }
+
+    .main_button .main_notice p {
+        font-size: 4.6512vw;
+
+        margin-left: 9.3023vw;
+        margin-right: 3vw;
+    }
+}

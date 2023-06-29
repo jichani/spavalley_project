@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -12,21 +12,26 @@
   box-sizing: border-box;
   font-family: "Pretendard-Regular";
 }
+
 li {
   display: inline-block;
   text-decoration: none;
 }
+
 a {
   color: black;
   text-decoration: none;
 }
+
 a:hover {
   color: black;
 }
+
 h2 {
   font-size: 2.083333vw;
   font-weight: bold;
 }
+
 section {
   /* width: 100vw; */
   /* 1060px == 66.25em */
@@ -34,6 +39,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .wrap {
   width: 70%;
   margin: 0 auto;
@@ -43,6 +49,7 @@ html {
   /* 1920px 기준 16.0000128px */
   font-size: 0.833334vw;
 }
+
 #main_video {
   outline: none;
   border: none;
@@ -50,6 +57,7 @@ html {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
 }
+
 /*해더부분*/
 header #gnb {
   margin: 0 auto;
@@ -58,28 +66,34 @@ header #gnb {
   align-items: center;
   color: white;
 }
+
 header #gnb .gnb_branch {
   width: 55%;
 }
+
 header #gnb .gnb_branch li {
   text-align: center;
   width: 22%;
 }
+
 header #gnb .gnb_branch li a {
   width: 100%;
   height: 100%;
   color: white;
 }
+
 header #gnb .gnb_branch li a input {
   display: none;
 }
+
 header #gnb .gnb_branch li a label {
   width: 100%;
   font-size: 0.9rem;
   line-height: 1.5rem;
   vertical-align: bottom;
 }
-header #gnb .gnb_branch li a input:checked ~ label {
+
+header #gnb .gnb_branch li a input:checked~label {
   background-color: white;
   color: #3e93cd;
 }
@@ -101,13 +115,16 @@ header #gnb .gnb_login li a {
   margin: 0 auto;
   font-size: 1rem;
 }
+
 .navbar-brand img {
   width: 80%;
   transition: 0.3s;
 }
+
 .navbar-brand.scdown img {
   width: 60%;
 }
+
 #navbarNav {
   transition: 0.3s;
 }
@@ -120,11 +137,13 @@ header #gnb .gnb_login li a {
 .navbar-nav .nav-link.active {
   color: black;
 }
-.collapse > .navbar-nav {
+
+.collapse>.navbar-nav {
   --bs-nav-link-color: black;
   --bs-nav-link-hover-color: black;
   --bs-nav-link-disabled-color: black;
 }
+
 .nav-item {
   padding-left: 1.5em;
   font-size: 1.3rem;
@@ -138,24 +157,28 @@ header #gnb .gnb_login li a {
   overflow: hidden;
   position: relative;
 }
-.header_main > div:first > img {
+
+.header_main>div:first>img {
   width: 100%;
 }
 
-.header_main > .sc_icon > img {
+.header_main>.sc_icon>img {
   width: 1.875rem;
   position: absolute;
   bottom: 2.5rem;
   left: calc(50% - 0.9375rem);
   animation: upDown 1.5s ease-in-out infinite;
 }
+
 @keyframes upDown {
   0% {
     transform: translateY(-7px);
   }
+
   50% {
     transform: translateY(7px);
   }
+
   100% {
     transform: translateY(-7px);
   }
@@ -173,10 +196,12 @@ main .wrap .event_text p {
   font-size: 1.5rem;
   text-decoration: underline;
 }
+
 /* EVENT 그리드 */
 .grid_wrap {
   padding: 10em 0;
 }
+
 main .wrap .grid {
   margin: 0 auto;
   width: 100%;
@@ -194,35 +219,44 @@ main .wrap .grid img {
   height: 100%;
   border-radius: 10px;
 }
+
 main .wrap .grid div {
   border-radius: 10px;
   border-top: 1px solid rgb(0, 0, 0, 0.1);
   border-left: 1px solid rgb(0, 0, 0, 0.1);
   box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
 }
+
 #item1 {
   grid-area: a;
   border: 1px solid rgb(0, 0, 0, 0.1);
 }
+
 #item2 {
   grid-area: b;
   border: 1px solid rgb(0, 0, 0, 0.1);
 }
+
 #item3 {
   grid-area: c;
 }
+
 #item4 {
   grid-area: d;
 }
+
 #item5 {
   grid-area: e;
 }
+
 #item6 {
   grid-area: f;
 }
+
 #item6 img:first-child {
   display: block;
 }
+
 #item6 img:last-child {
   display: none;
 }
@@ -236,13 +270,16 @@ main .wrap .grid div {
 article {
   background-color: #f0f2f9;
 }
+
 article .wrap {
   padding: 3rem 0;
 }
+
 #scene_sketch .text_sketch {
   text-align: center;
   margin-top: 3.625rem;
 }
+
 #scene_sketch .text_sketch p {
   font-size: 1.25rem;
 }
@@ -254,6 +291,7 @@ article .wrap {
   padding-bottom: 56.25%;
   border-radius: 10px;
 }
+
 .video_wrap iframe {
   position: absolute;
   width: 100%;
@@ -261,7 +299,7 @@ article .wrap {
   border-radius: 10px;
 }
 
-.row > * {
+.row>* {
   padding: 0.75rem;
 }
 
@@ -269,9 +307,11 @@ article .wrap {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .text_middle {
   font-size: 1.5rem;
 }
+
 .text_middle_height {
   height: 6rem;
 }
@@ -288,7 +328,8 @@ article .wrap {
   font-size: 0.75rem;
   color: #ccc;
 }
-.footer_sns > div:nth-child(2) img {
+
+.footer_sns>div:nth-child(2) img {
   height: 34px;
   width: 34px;
   padding: 2px;
@@ -309,12 +350,15 @@ article .wrap {
       "e d"
       "f f";
   }
+
   #item6 img:first-child {
     display: none;
   }
+
   #item6 img:last-child {
     display: block;
   }
+
   #item6 {
     grid-area: f;
   }
@@ -323,37 +367,46 @@ article .wrap {
     text-align: center;
     font-size: 2.7907vw;
   }
+
   svg {
     width: 5rem;
     height: 5rem;
   }
-  .footer_sns > div {
+
+  .footer_sns>div {
     width: 10%;
   }
 }
+
 @media only screen and (max-width: 992px) {
   header #gnb {
     display: none;
   }
 }
+
 @media only screen and (max-width: 1019px) {
   header .wrap {
     width: 90%;
   }
+
   main .wrap {
     width: 90%;
   }
+
   .navbar {
     width: 90%;
   }
+
   .nav-item {
     padding-left: 1.6em;
     font-size: 1.7rem;
     font-weight: 500;
   }
+
   header #gnb .gnb_branch li a label {
     line-height: 2rem;
   }
+
   main .wrap .grid {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(20rem, auto);
@@ -364,10 +417,12 @@ article .wrap {
 .navbar-toggler {
   border: none;
 }
+
 input[id="menuToggle"] {
   display: none;
 }
-input[id="menuToggle"] + label {
+
+input[id="menuToggle"]+label {
   display: block;
   width: 25px;
   height: 20px;
@@ -375,7 +430,8 @@ input[id="menuToggle"] + label {
   cursor: pointer;
   z-index: 555;
 }
-input[id="menuToggle"] + label span {
+
+input[id="menuToggle"]+label span {
   display: block;
   position: absolute;
   width: 100%;
@@ -384,26 +440,31 @@ input[id="menuToggle"] + label span {
   background: #000;
   transition: all 0.35s;
 }
-input[id="menuToggle"] + label span:nth-child(1) {
+
+input[id="menuToggle"]+label span:nth-child(1) {
   top: 0;
 }
-input[id="menuToggle"] + label span:nth-child(2) {
+
+input[id="menuToggle"]+label span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
-input[id="menuToggle"] + label span:last-child {
+
+input[id="menuToggle"]+label span:last-child {
   bottom: 0;
 }
 
-input[id="menuToggle"]:checked + label span:nth-child(1) {
+input[id="menuToggle"]:checked+label span:nth-child(1) {
   top: 50%;
   background-color: #fff;
   transform: translateY(-50%) rotate(45deg);
 }
-input[id="menuToggle"]:checked + label span:nth-child(2) {
+
+input[id="menuToggle"]:checked+label span:nth-child(2) {
   opacity: 0;
 }
-input[id="menuToggle"]:checked + label span:last-child {
+
+input[id="menuToggle"]:checked+label span:last-child {
   bottom: 50%;
   background-color: #fff;
   transform: translateY(50%) rotate(-45deg);
@@ -419,7 +480,8 @@ input[id="menuToggle"]:checked + label span:last-child {
   z-index: 1;
   transition: all 0.35s;
 }
-input#menuToggle:checked + label + div {
+
+input#menuToggle:checked+label+div {
   right: 0;
 }
 
@@ -427,6 +489,7 @@ input#menuToggle:checked + label + div {
   padding-top: 80px;
   opacity: 90%;
 }
+
 .accordion {
   --bs-accordion-bg: none;
   --bs-accordion-border-color: none;
@@ -435,6 +498,7 @@ input#menuToggle:checked + label + div {
   --bs-accordion-btn-icon-width: 3rem;
   --bs-accordion-btn-icon: url("../images/insta.png") !important;
 }
+
 .accordion-button::after {
   background-image: url("../images/arrowdown.png") !important;
 }
@@ -447,10 +511,12 @@ input#menuToggle:checked + label + div {
   font-weight: bold;
   padding: 5px;
 }
+
 .accordion-button.collapsed {
   background-color: #3e93cd;
   box-shadow: 0;
 }
+
 .accordion-button:not(.collapsed) {
   background-color: #3e93cd;
   box-shadow: 0 !important;
@@ -464,6 +530,7 @@ input#menuToggle:checked + label + div {
   font-size: 2.5rem;
   position: relative;
 }
+
 .accordion-item::after {
   content: "";
   width: 120%;
