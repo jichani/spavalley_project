@@ -642,5 +642,16 @@ input#menuToggle:checked+label+div {
     font-size: 3.2558vw;
   }
 
+  .accordion-flush .accordion-item .accordion-button,
+  .accordion-flush .accordion-item .accordion-button.collapsed {
+
+    font-size: 5.5814vw;
+  }
+
+  .accordion-body>div {
+    font-size: 4.1860vw;
+    padding-top: 2vw;
+  }
+
 
 }
