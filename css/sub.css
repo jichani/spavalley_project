@@ -4,6 +4,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -11,24 +12,30 @@
   box-sizing: border-box;
   font-family: "Pretendard-Regular";
 }
+
 ul {
   padding-left: 0;
 }
+
 li {
   display: inline-block;
   text-decoration: none;
 }
+
 a {
   color: black;
   text-decoration: none;
 }
+
 a:hover {
   color: black;
 }
+
 h2 {
   font-size: 2.083333vw;
   font-weight: bold;
 }
+
 section {
   /* width: 100vw; */
   /* 1060px == 66.25em */
@@ -36,6 +43,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .wrap {
   width: 70%;
   margin: 0 auto;
@@ -54,28 +62,34 @@ header #gnb {
   align-items: center;
   color: white;
 }
+
 header #gnb .gnb_branch {
   width: 55%;
 }
+
 header #gnb .gnb_branch li {
   text-align: center;
   width: 22%;
 }
+
 header #gnb .gnb_branch li a {
   width: 100%;
   height: 100%;
   color: white;
 }
+
 header #gnb .gnb_branch li a input {
   display: none;
 }
+
 header #gnb .gnb_branch li a label {
   width: 100%;
   font-size: 0.9rem;
   line-height: 1.5rem;
   vertical-align: bottom;
 }
-header #gnb .gnb_branch li a input:checked ~ label {
+
+header #gnb .gnb_branch li a input:checked~label {
   background-color: white;
   color: #3e93cd;
 }
@@ -97,13 +111,16 @@ header #gnb .gnb_login li a {
   margin: 0 auto;
   font-size: 1rem;
 }
+
 .navbar-brand img {
   width: 80%;
   transition: 0.3s;
 }
+
 .navbar-brand.scdown img {
   width: 60%;
 }
+
 #navbarNav {
   transition: 0.3s;
 }
@@ -116,11 +133,13 @@ header #gnb .gnb_login li a {
 .navbar-nav .nav-link.active {
   color: black;
 }
-.collapse > .navbar-nav {
+
+.collapse>.navbar-nav {
   --bs-nav-link-color: black;
   --bs-nav-link-hover-color: black;
   --bs-nav-link-disabled-color: black;
 }
+
 .nav-item {
   padding-left: 1.5em;
   font-size: 1.3rem;
@@ -132,10 +151,12 @@ header #gnb .gnb_login li a {
 .navbar-toggler {
   border: none;
 }
+
 input[id="menuToggle"] {
   display: none;
 }
-input[id="menuToggle"] + label {
+
+input[id="menuToggle"]+label {
   display: block;
   width: 25px;
   height: 20px;
@@ -143,7 +164,8 @@ input[id="menuToggle"] + label {
   cursor: pointer;
   z-index: 555;
 }
-input[id="menuToggle"] + label span {
+
+input[id="menuToggle"]+label span {
   display: block;
   position: absolute;
   width: 100%;
@@ -152,26 +174,31 @@ input[id="menuToggle"] + label span {
   background: #000;
   transition: all 0.35s;
 }
-input[id="menuToggle"] + label span:nth-child(1) {
+
+input[id="menuToggle"]+label span:nth-child(1) {
   top: 0;
 }
-input[id="menuToggle"] + label span:nth-child(2) {
+
+input[id="menuToggle"]+label span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
-input[id="menuToggle"] + label span:last-child {
+
+input[id="menuToggle"]+label span:last-child {
   bottom: 0;
 }
 
-input[id="menuToggle"]:checked + label span:nth-child(1) {
+input[id="menuToggle"]:checked+label span:nth-child(1) {
   top: 50%;
   background-color: #fff;
   transform: translateY(-50%) rotate(45deg);
 }
-input[id="menuToggle"]:checked + label span:nth-child(2) {
+
+input[id="menuToggle"]:checked+label span:nth-child(2) {
   opacity: 0;
 }
-input[id="menuToggle"]:checked + label span:last-child {
+
+input[id="menuToggle"]:checked+label span:last-child {
   bottom: 50%;
   background-color: #fff;
   transform: translateY(50%) rotate(-45deg);
@@ -187,7 +214,8 @@ input[id="menuToggle"]:checked + label span:last-child {
   z-index: 1;
   transition: all 0.35s;
 }
-input#menuToggle:checked + label + div {
+
+input#menuToggle:checked+label+div {
   right: 0;
 }
 
@@ -195,6 +223,7 @@ input#menuToggle:checked + label + div {
   padding-top: 80px;
   opacity: 90%;
 }
+
 .accordion {
   --bs-accordion-bg: none;
   --bs-accordion-border-color: none;
@@ -203,6 +232,7 @@ input#menuToggle:checked + label + div {
   --bs-accordion-btn-icon-width: 3rem;
   --bs-accordion-btn-icon: url("../images/insta.png") !important;
 }
+
 .accordion-button::after {
   background-image: url("../images/arrowdown.png") !important;
 }
@@ -215,10 +245,12 @@ input#menuToggle:checked + label + div {
   font-weight: bold;
   padding: 5px;
 }
+
 .accordion-button.collapsed {
   background-color: #3e93cd;
   box-shadow: 0;
 }
+
 .accordion-button:not(.collapsed) {
   background-color: #3e93cd;
   box-shadow: 0 !important;
@@ -232,6 +264,7 @@ input#menuToggle:checked + label + div {
   font-size: 2.5rem;
   position: relative;
 }
+
 .accordion-item::after {
   content: "";
   width: 120%;
@@ -245,22 +278,27 @@ input#menuToggle:checked + label + div {
   background-color: #f0f2f9;
   position: relative;
 }
+
 /* ul */
-.title > ul {
+.title>ul {
   border-bottom: 1px solid rgb(204, 204, 204, 0.8);
 }
-.title > ul > li {
+
+.title>ul>li {
   padding: 1rem;
 }
-.title > ul > li:last-child > a {
+
+.title>ul>li:last-child>a {
   color: #3e93cd;
 }
+
 .wrap h1 {
   margin: 1rem 0;
   position: absolute;
   top: 18%;
   z-index: 999;
 }
+
 /* location box */
 .location {
   background-color: rgb(255, 255, 255, 0.8);
@@ -275,6 +313,7 @@ input#menuToggle:checked + label + div {
   padding: 1rem;
   margin-bottom: 2rem !important;
 }
+
 .location p {
   padding: 3px;
 }
@@ -294,10 +333,12 @@ button {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .text_title {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .text_text {
   font-size: 1rem;
 }
@@ -309,11 +350,13 @@ button {
   font-size: 0.75rem;
   color: #ccc;
 }
-.footer_sns > div:nth-child(2) img {
+
+.footer_sns>div:nth-child(2) img {
   height: 34px;
   width: 34px;
   padding: 2px;
 }
+
 .gm-style-mtc button {
   width: 100px;
 }
@@ -322,10 +365,24 @@ button {
   .wrap h1 {
     display: none;
   }
+
   .location {
     display: none;
   }
+
+  .navbar-brand img {
+    width: 140px;
+  }
+
+  .wrap {
+    width: 90%;
+  }
+
+  .navbar>.container-fluid {
+    flex-wrap: nowrap;
+  }
 }
+
 @media only screen and (max-width: 992px) {
   header #gnb {
     display: none;
