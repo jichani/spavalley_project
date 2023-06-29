@@ -241,12 +241,21 @@ input#menuToggle:checked + label + div {
   border-bottom: 1px solid white;
 }
 
+.background {
+  background-color: #f0f2f9;
+}
 /* ul */
+.title > ul {
+  border-bottom: 1px solid rgb(204, 204, 204, 0.8);
+}
 .title > ul > li {
   padding: 1rem;
 }
 .title > ul > li:last-child > a {
   color: #3e93cd;
+}
+.wrap h1 {
+  margin: 1rem 0;
 }
 /* location box */
 .location {
