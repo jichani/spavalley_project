@@ -11,6 +11,9 @@
   box-sizing: border-box;
   font-family: "Pretendard-Regular";
 }
+ul {
+  padding-left: 0;
+}
 li {
   display: inline-block;
   text-decoration: none;
@@ -236,6 +239,59 @@ input#menuToggle:checked + label + div {
   position: absolute;
   bottom: 0;
   border-bottom: 1px solid white;
+}
+
+.background {
+  background-color: #f0f2f9;
+}
+/* ul */
+.title > ul {
+  border-bottom: 1px solid rgb(204, 204, 204, 0.8);
+}
+.title > ul > li {
+  padding: 1rem;
+}
+.title > ul > li:last-child > a {
+  color: #3e93cd;
+}
+.wrap h1 {
+  margin: 1rem 0;
+}
+/* location box */
+.location {
+  background-color: rgb(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  width: 30%;
+}
+.text_wrap {
+  padding: 1rem;
+  margin-bottom: 2rem !important;
+}
+.location p {
+  padding: 3px;
+}
+
+button {
+  margin: 0 auto;
+  color: #656565;
+  padding: 4px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  width: 80%;
+  background-color: transparent;
+}
+
+/* 글자크기 */
+.text_main {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.text_text {
+  font-size: 1rem;
 }
 
 /* 푸터 */
