@@ -22,11 +22,20 @@
     }
 
     .swiper-slide {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
 
+@media only screen and (max-width: 576px) {
+    .swiper {
+        width: 70%;
+        height: 5vw;
+    }
 
+    .swiper-slide {
+        font-size: 3vw;
+    }
+}
 
 /* 버튼 이벤트 */
 
@@ -86,6 +95,54 @@
 }
 
 @media only screen and (max-width: 1019px) {
+    .main_button {
+        flex-direction: column-reverse;
+
+        border-bottom: 0;
+    }
+
+    .main_button .icon_button {
+        margin-left: 0;
+
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .main_button .icon_button img {
+        width: 5vw;
+    }
+
+    .main_button .icon_button p {
+        font-size: 2vw;
+
+        margin-left: 1.8vw;
+        margin-right: 2.4vw;
+    }
+
+    .main_button .icon_button a:last-child p {
+        margin-right: 0;
+    }
+
+    .main_button .main_notice {
+        border-left: 0;
+        margin-left: 5vw;
+
+        border-bottom: 0;
+
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+
+    }
+
+    .main_button .main_notice p {
+        font-size: 3vw;
+
+        margin-left: 10.1vw;
+        margin-right: 3vw;
+    }
+}
+
+@media only screen and (max-width: 576px) {
     .main_button {
         flex-direction: column-reverse;
 
