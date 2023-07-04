@@ -249,6 +249,36 @@ ul {
   transform: scale(1.1);
 } */
 
+.fa-screwdriver-wrench {
+  color: yellow;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.5em;
+
+  margin-left: 0.6rem;
+
+  position: relative;
+  top: 5px
+}
+
+.fa-o {
+  color: #00aaff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.8em;
+
+  margin-left: 0.40rem;
+}
+
+#inner_carousel .wrap .event_text {
+  padding: 3rem 0;
+}
+
+#inner_carousel .wrap .event_text h2 {
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1010px) {
   section {
     height: 100%;
@@ -381,34 +411,17 @@ ul {
   .controls i:nth-child(2) {
     border-bottom-right-radius: 0;
   }
-}
 
-.fa-screwdriver-wrench {
-  color: yellow;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 1.5em;
+  .fa-screwdriver-wrench {
+    font-size: 2em;
+    margin-left: 0.7rem;
 
-  margin-left: 0.6rem;
+    position: relative;
+    top: 2px;
+  }
 
-  position: relative;
-  top: 5px
-}
-
-.fa-o {
-  color: #00aaff;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 1.8em;
-
-  margin-left: 0.40rem;
-}
-
-#inner_carousel .wrap .event_text {
-  padding: 3rem 0;
-}
-
-#inner_carousel .wrap .event_text h2 {
-  font-size: 1.8vw;
-  font-weight: bold;
+  .fa-o {
+    font-size: 2.2em;
+    margin-left: 0.6rem;
+  }
 }
