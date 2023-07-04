@@ -606,18 +606,6 @@ input#menuToggle:checked+label+div {
   .notice_section {
     margin-bottom: 9vw !important;
   }
-
-  #inner_carousel .wrap .event_text {
-    padding: 7rem 0;
-  }
-
-  #inner_carousel .wrap .event_text h2 {
-    font-size: 3vw;
-  }
-
-  #inner_carousel .wrap .event_text p {
-    font-size: 2vw;
-  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -667,13 +655,5 @@ input#menuToggle:checked+label+div {
   .accordion-body>div {
     font-size: 4.1860vw;
     padding-top: 2vw;
-  }
-
-  #inner_carousel .wrap .event_text h2 {
-    font-size: 5vw;
-  }
-
-  #inner_carousel .wrap .event_text p {
-    font-size: 3.7209vw;
   }
 }
