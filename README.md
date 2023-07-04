@@ -1,6 +1,6 @@
  YJ Mini Team Project : Team Prism 🌈
 
-# 스파밸리 웹사이트 [ 메인, 오시는길 ] 리뉴얼 프로젝트 🦺 <br>
+# 스파밸리 웹사이트 [ 메인, 오시는길 ] 리뉴얼 프로젝트 🥽 <br>
 제작기간 : " 23.06.12 - 23.06.30 " <br>
 
 ### Demo : https://spavalley-project.netlify.app/
