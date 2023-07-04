@@ -13,7 +13,7 @@
 
   /* size */
   --slide-width: 10vw;
-  --slide-margin: 2.4vw;
+  --slide-margin: 3vw;
 
   /* font-size */
 }
@@ -222,7 +222,7 @@ ul {
   position: absolute;
   color: white;
 
-  top: 18%;
+  top: 10%;
   left: 35%;
 }
 
@@ -383,17 +383,20 @@ ul {
   }
 }
 
-.fa-hammer {
+.fa-screwdriver-wrench {
   color: yellow;
   font-weight: 600;
   cursor: pointer;
-  font-size: 1.8em;
+  font-size: 1.5em;
 
-  margin-left: 0.40rem;
+  margin-left: 0.6rem;
+
+  position: relative;
+  top: 5px
 }
 
 .fa-o {
-  color: #3e93cd;
+  color: #00aaff;
   font-weight: 600;
   cursor: pointer;
   font-size: 1.8em;
@@ -401,11 +404,11 @@ ul {
   margin-left: 0.40rem;
 }
 
-.fa-x {
-  color: red;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 1.6em;
+#inner_carousel .wrap .event_text {
+  padding: 3rem 0;
+}
 
-  margin-left: 0.40rem;
+#inner_carousel .wrap .event_text h2 {
+  font-size: 1.8vw;
+  font-weight: bold;
 }

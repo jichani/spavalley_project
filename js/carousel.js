@@ -21,7 +21,7 @@ if (currentWidth < 1010) {
 
 else if (currentWidth > 1010) {
   slideWidth = 10;
-  slideMargin = 2.4;
+  slideMargin = 3;
   setInitialPosition();
 }
 
@@ -37,7 +37,7 @@ function handleResize() {
     updateCurrentSlideImage();
   } else if (currentWidth > 1010) {
     slideWidth = 10;
-    slideMargin = 2.4;
+    slideMargin = 3;
     updateWidth();
     setInitialPosition();
     updateCurrentSlideImage();
@@ -86,7 +86,7 @@ function setInitialPosition() {
     slideMargin = 1.8;
   } else if (currentWidth > 1010) {
     slideWidth = 10;
-    slideMargin = 2.4;
+    slideMargin = 3;
   }
 
   let initialTranslateValue = -(slideWidth + slideMargin) * slideCount;
