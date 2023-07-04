@@ -20,8 +20,8 @@ if (currentWidth < 1010) {
 }
 
 else if (currentWidth > 1010) {
-  slideWidth = 12.4166;
-  slideMargin = 1.5625;
+  slideWidth = 10;
+  slideMargin = 2.4;
   setInitialPosition();
 }
 
@@ -36,8 +36,8 @@ function handleResize() {
     setInitialPosition();
     updateCurrentSlideImage();
   } else if (currentWidth > 1010) {
-    slideWidth = 12.4166;
-    slideMargin = 1.5625;
+    slideWidth = 10;
+    slideMargin = 2.4;
     updateWidth();
     setInitialPosition();
     updateCurrentSlideImage();
@@ -85,8 +85,8 @@ function setInitialPosition() {
     slideWidth = 16;
     slideMargin = 1.8;
   } else if (currentWidth > 1010) {
-    slideWidth = 12.4166;
-    slideMargin = 1.5625;
+    slideWidth = 10;
+    slideMargin = 2.4;
   }
 
   let initialTranslateValue = -(slideWidth + slideMargin) * slideCount;

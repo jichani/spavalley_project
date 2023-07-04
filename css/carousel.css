@@ -12,8 +12,8 @@
   --color-blue: #3e93cd;
 
   /* size */
-  --slide-width: 12.4166vw;
-  --slide-margin: 1.5625vw;
+  --slide-width: 10vw;
+  --slide-margin: 2.4vw;
 
   /* font-size */
 }
@@ -166,7 +166,7 @@ ul {
 .slide_wrapper {
   position: relative;
   /* 5개의 이미지와 4개의 마진을 계산 */
-  width: 68.333vw;
+  width: calc(var(--slide-width) * 5 + var(--slide-margin) * 4);
   margin: 0 auto;
   height: 17vw;
   overflow: hidden;
@@ -383,11 +383,29 @@ ul {
   }
 }
 
-i.fa-x {
+.fa-hammer {
+  color: yellow;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.8em;
+
+  margin-left: 0.40rem;
+}
+
+.fa-o {
+  color: #3e93cd;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.8em;
+
+  margin-left: 0.40rem;
+}
+
+.fa-x {
   color: red;
   font-weight: 600;
   cursor: pointer;
-  font-size: 1.3em;
+  font-size: 1.6em;
 
-  margin-left: 1.250rem;
+  margin-left: 0.40rem;
 }
