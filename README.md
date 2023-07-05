@@ -15,6 +15,16 @@
 
 ---
 
+## 👨🏻‍🤝‍👨팀원 소개
+
+<br>
+
+<p align="center">
+    <img src="./images/readme/team.png" alt="incruit results" width="100%" textaling="center"/>
+</p>
+
+---
+
 ## 🧾기획 배경
 
 <br>
