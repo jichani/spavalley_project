@@ -93,7 +93,7 @@ header #gnb .gnb_branch li a label {
   vertical-align: bottom;
 }
 
-header #gnb .gnb_branch li a input:checked~label {
+header #gnb .gnb_branch li a input:checked ~ label {
   background-color: white;
   color: #3e93cd;
 }
@@ -107,6 +107,10 @@ header #gnb .gnb_login li a {
 
   padding: 0 5px;
   color: white;
+}
+.sticky-top {
+  background-color: white;
+  box-shadow: 0 0 4px gray;
 }
 
 .navbar {
@@ -138,16 +142,33 @@ header #gnb .gnb_login li a {
   color: black;
 }
 
-.collapse>.navbar-nav {
+.collapse > .navbar-nav {
   --bs-nav-link-color: black;
   --bs-nav-link-hover-color: black;
   --bs-nav-link-disabled-color: black;
 }
 
 .nav-item {
-  padding-left: 1.5em;
+  margin-left: 1.5em;
   font-size: 1.3rem;
   font-weight: 500;
+  position: relative;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  height: 3px;
+  border-radius: 2px;
+  width: 0;
+  background-color: #3e93cd;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #3e93cd !important;
+}
+.nav-link:hover::before {
+  width: calc(100% - 1rem);
 }
 
 /* 토글 */
@@ -160,7 +181,7 @@ input[id="menuToggle"] {
   display: none;
 }
 
-input[id="menuToggle"]+label {
+input[id="menuToggle"] + label {
   display: block;
   width: 25px;
   height: 20px;
@@ -169,7 +190,7 @@ input[id="menuToggle"]+label {
   z-index: 555;
 }
 
-input[id="menuToggle"]+label span {
+input[id="menuToggle"] + label span {
   display: block;
   position: absolute;
   width: 100%;
@@ -179,30 +200,30 @@ input[id="menuToggle"]+label span {
   transition: all 0.35s;
 }
 
-input[id="menuToggle"]+label span:nth-child(1) {
+input[id="menuToggle"] + label span:nth-child(1) {
   top: 0;
 }
 
-input[id="menuToggle"]+label span:nth-child(2) {
+input[id="menuToggle"] + label span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 
-input[id="menuToggle"]+label span:last-child {
+input[id="menuToggle"] + label span:last-child {
   bottom: 0;
 }
 
-input[id="menuToggle"]:checked+label span:nth-child(1) {
+input[id="menuToggle"]:checked + label span:nth-child(1) {
   top: 50%;
   background-color: #fff;
   transform: translateY(-50%) rotate(45deg);
 }
 
-input[id="menuToggle"]:checked+label span:nth-child(2) {
+input[id="menuToggle"]:checked + label span:nth-child(2) {
   opacity: 0;
 }
 
-input[id="menuToggle"]:checked+label span:last-child {
+input[id="menuToggle"]:checked + label span:last-child {
   bottom: 50%;
   background-color: #fff;
   transform: translateY(50%) rotate(-45deg);
@@ -219,7 +240,7 @@ input[id="menuToggle"]:checked+label span:last-child {
   transition: all 0.35s;
 }
 
-input#menuToggle:checked+label+div {
+input#menuToggle:checked + label + div {
   right: 0;
 }
 
@@ -284,15 +305,15 @@ input#menuToggle:checked+label+div {
 }
 
 /* ul */
-.title>ul {
+.title > ul {
   border-bottom: 1px solid rgb(204, 204, 204, 0.8);
 }
 
-.title>ul>li {
+.title > ul > li {
   padding: 1rem;
 }
 
-.title>ul>li:last-child>a {
+.title > ul > li:last-child > a {
   color: #3e93cd;
 }
 
@@ -355,7 +376,7 @@ button {
   color: #ccc;
 }
 
-.footer_sns>div:nth-child(2) img {
+.footer_sns > div:nth-child(2) img {
   height: 34px;
   width: 34px;
   padding: 2px;
@@ -382,7 +403,7 @@ button {
     width: 90%;
   }
 
-  .navbar>.container-fluid {
+  .navbar > .container-fluid {
     flex-wrap: nowrap;
   }
 }
