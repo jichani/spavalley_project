@@ -20,7 +20,7 @@
 <br>
 
 <p align="center">
-    <img src="./images/readme/team.png" alt="Team" width="100%" textaling="center"/>
+    <img src="./images/readme/Team.png" alt="Team" width="100%" textaling="center"/>
 </p>
 
 ---
