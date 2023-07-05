@@ -40,10 +40,9 @@
 </p>
 
 - 기존 웹사이트의 문제점
-
-1. 정보가 너무 밀집되어 있음
-2. 직관적이지 못한 디자인
-3. 반응형으로 제작되지 않아 모바일에서 컨텐츠가 부족
+<p align="center">
+    <img src="./images/readme/background.png" alt="background" width="80%"/>
+</p>
 
 ---
 
@@ -73,55 +72,55 @@
 
 1.  Open API 활용 \_ 구글 API를 활용하여 지도 삽입
 
-        <p align="center">
-            <img src="./images/readme/map.png" alt="map api" width="100%"/>
-        </p>
+    <p align="center">
+        <img src="./images/readme/map.png" alt="map api" width="100%"/>
+    </p>
 
-        ```javascript
-        function initMap() {
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 20,
-            center: { lat: 35.78809837100381, lng: 128.63544134464186 }, // 지도의 중심 좌표
+    ```javascript
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 20,
+        center: { lat: 35.78809837100381, lng: 128.63544134464186 }, // 지도의 중심 좌표
+      });
+
+      // 마커 정보
+      var locations = [{ testId: "location01", lat: 35.78809837100381, lng: 128.63544134464186 }];
+
+      // 마커 생성
+      for (var i = 0; i < locations.length; i++) {
+        var mapIcon = new google.maps.MarkerImage("images/map_google_marker.png");
+        // 이미지 파일 경로를 설정해주면 다른 마커아이콘을 쓸 수 있음!
+        var marker = new google.maps.Marker({
+          map: map,
+          position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+          icon: mapIcon,
         });
+        google.maps.event.addListener(
+          marker,
+          "click",
+          (function (marker, i) {
+            return function () {
+              // 마커 클릭시 실행할 이벤트를 설정해줄 수 있다
+              alert(locations[i].testId);
+            };
+          })(marker, i)
+        );
+      }
+    }
+    ```
 
-        // 마커 정보
-        var locations = [{ testId: "location01", lat: 35.78809837100381, lng: 128.63544134464186 }];
+    ```html
+    <div id="map" style="width: 100%; height: 600px">지도가 들어가는 영역!</div>
 
-        // 마커 생성
-        for (var i = 0; i < locations.length; i++) {
-            var mapIcon = new google.maps.MarkerImage("images/map_google_marker.png");
-            // 이미지 파일 경로를 설정해주면 다른 마커아이콘을 쓸 수 있음!
-            var marker = new google.maps.Marker({
-            map: map,
-            position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
-            icon: mapIcon,
-            });
-            google.maps.event.addListener(
-            marker,
-            "click",
-            (function (marker, i) {
-                return function () {
-                // 마커 클릭시 실행할 이벤트를 설정해줄 수 있다
-                alert(locations[i].testId);
-                };
-            })(marker, i)
-            );
-        }
-        }
-        ```
+    <script src="https://maps.googleapis.com/maps/api/js?key=0000000000000000000000&callback=initMap&libraries=&v=weekly" async></script>
+    ```
 
-        ```html
-        <div id="map" style="width: 100%; height: 600px">지도가 들어가는 영역!</div>
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=0000000000000000000000&callback=initMap&libraries=&v=weekly" async></script>
-        ```
-
-    <br>
+<br>
 
 2.  이미지 버튼 작은 이미지 클릭 시 큰 이미지가 바뀌게 구현
 
      <p align="center">
-         <img src="./images/readme/map.png" alt="map api" width="100%"/>
+         <img src="./images/readme/slider.gif" alt="slider_button" width="100%"/>
      </p>
 
     ```js
@@ -159,11 +158,11 @@
 
 <p align="center">
     <img src="./images/readme/%EC%86%8C%EA%B0%903.png" alt="
-impression1" width="80%"/>
+impression1" width="90%"/>
     <img src="./images/readme/%EC%86%8C%EA%B0%902.png" alt="
-impression2" width="80%"/>
+impression2" width="90%"/>
     <img src="./images/readme/%EC%86%8C%EA%B0%901.png" alt="
-impression3" width="80%"/>
+impression3" width="90%"/>
 </p>
 
 ---
