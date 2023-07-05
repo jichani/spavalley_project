@@ -8,7 +8,7 @@
 
 ---
 
-## 💻목업 사진
+## 💻 목업 사진
 
 <br>
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 👨🏻‍🤝‍👨팀원 소개
+## 👨🏻‍🤝‍👨 팀원 소개
 
 <br>
 
@@ -29,7 +29,7 @@
 
 ---
 
-## 🧾기획 배경
+## 🧾 기획 배경
 
 <br>
 
@@ -61,27 +61,27 @@
 
 ---
 
-## 📅개발 일정
+## 📅 개발 일정
 
 <br>
 
 <p align="center">
-    <img src="./images/readme/plan.png" alt="plan" width="80%"/>
+    <img src="./images/readme/plan.png" alt="plan" width="90%"/>
 </p>
 
 ---
 
-## 💻개발 환경
+## 💻 개발 환경
 
 <br>
 
 <p align="center">
-    <img src="./images/readme/tools.png" alt="develop tools" width="80%"/>
+    <img src="./images/readme/tools.png" alt="develop tools" width="90%"/>
 </p>
 
 ---
 
-## 📲구현 기능
+## 📲 구현 기능
 
 <br>
 
@@ -167,7 +167,7 @@
 
 ---
 
-## 👨‍💻자체 평가 및 의견
+## 👨‍💻 자체 평가 및 의견
 
 <br>
 
