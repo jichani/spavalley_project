@@ -10,7 +10,16 @@
 
 ## 🧾기획 배경
 
-- 여름 휴가에 맞추어 사이트의 방문자 숫자가 늘어나고 있음.
+<p align="center">
+    <img src="./images/readme/incruit.png" width="450" textaling="center"/>
+</p>
+
+    성인 남녀 835명을 대상으로 조사한 결과 80.1%가 여름 휴가를 계획하고 있으며 그 중 30.9%가 가까운 국내 여행을 계획하고 있다고 함.
+
+<p align="center">
+    <img src="./images/readme/similarweb.png"  width="450"/>
+</p>
+    여름 휴가에 맞추어 스파밸리 사이트의 방문자 숫자가 늘어나고 있음.
 
 ---
 
