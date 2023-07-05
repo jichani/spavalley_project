@@ -8,6 +8,13 @@
 
 ---
 
+<p align="center">
+    <img src="./images/readme/mokup_main.png" alt="mokup_main" width="100%" textaling="center"/>
+    <img src="./images/readme/mokup_map.png" alt="mokup_map" width="100%" textaling="center"/>
+</p>
+
+---
+
 ## 🧾기획 배경
 
 <br>
@@ -29,7 +36,7 @@
 <br/>
 
 <p align="center">
-    <img src="./images/readme/original_page.png" alt="spavalley website" width="70%"/>
+    <img src="./images/readme/original_page.png" alt="spavalley website" width="80%"/>
 </p>
 
 - 기존 웹사이트의 문제점
