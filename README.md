@@ -10,6 +10,8 @@
 
 ## 🧾기획 배경
 
+<br>
+
 <p align="center">
     <img src="./images/readme/incruit.png" alt="incruit results" width="80%" textaling="center"/>
 </p>
@@ -27,8 +29,10 @@
 <br/>
 
 <p align="center">
-    <img src="./images/readme/original_page.png" alt="spavalley website" width="60%"/>
+    <img src="./images/readme/original_page.png" alt="spavalley website" width="70%"/>
 </p>
+
+<br>
 
 ### 기존 웹사이트의 문제점
 
@@ -36,17 +40,27 @@
 2. 직관적이지 못한 디자인
 3. 반응형으로 제작되지 않아 모바일에서 컨텐츠가 부족
 
+<br>
+
 ---
 
 ## 📅개발 일정
 
+<br>
+
 <p align="center">
-    <img src="./images/readme/plan.png" alt="spavalley website" width="60%"/>
+    <img src="./images/readme/plan.png" alt="spavalley website" width="80%"/>
 </p>
 
 ---
 
 ## 💻개발 환경
+
+<br>
+
+<p align="center">
+    <img src="./images/readme/tools.png" alt="spavalley website" width="80%"/>
+</p>
 
 ---
 
