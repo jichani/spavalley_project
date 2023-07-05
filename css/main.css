@@ -150,9 +150,28 @@ header #gnb .gnb_login li a {
 }
 
 .nav-item {
-  padding-left: 1.5em;
+  margin-left: 1.5em;
   font-size: 1.3rem;
   font-weight: 500;
+  position: relative;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0.375rem;
+  height: 3px;
+  border-radius: 2px;
+  width: 0;
+
+  margin-right: 0.5rem;
+  background-color: #3e93cd;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #3e93cd !important;
+}
+.nav-link:hover::before {
+  width: calc(100% - 1rem);
 }
 
 /*해더 메인이미지*/
@@ -203,6 +222,10 @@ main .wrap .event_text {
 
 main .wrap .event_text p {
   font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
 }
 
 /* EVENT 그리드 */
@@ -284,7 +307,7 @@ article .wrap {
 }
 
 #scene_sketch .text_sketch {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 3.625rem;
 }
 
